@@ -1,11 +1,12 @@
 * {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
 
-.section-title {display: flex;align-items: center;gap: 15px;font-size: 24px;}
+.section-title {display: flex;align-items: center;gap: 15px;font-size: 24px;margin-bottom: 25px;}
+.section-title .title__group-1 {display: flex;gap: 50px;}
 .section-title .title__line-1 {width: 300px;height: 1px;background: #000;}
 .section-title .title__line-2 {width: 200px;height: 1px;background: #000;}
 .section-title .title__line-3 {width: 100px;height: 1px;background: #000;}
 
-header {position: fixed;top: 0;display: flex;justify-content: center;height: 75px;background: #fff;width: 100%;}
+header {position: fixed;top: 0;display: flex;justify-content: center;height: 75px;background: #fff;width: 100%;z-index: 100;}
 .header-inner {display: flex;justify-content: space-between;width: 1400px;padding: 10px 0;}
 .header__group-1 {display: flex;gap: 100px;}
 .logo {width: 150px;height: 100%;background: #00000009;}
