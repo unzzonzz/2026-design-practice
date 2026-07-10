@@ -1,0 +1,10 @@
+section.visual {display: flex;align-items: center;gap: 50px;height: calc(100vh - 225px);}
+section.visual .text-container {flex: 1;display: flex;flex-direction: column;}
+section.visual .text__group-1 {display: flex;border-top: 1px solid;border-bottom: 1px solid;}
+section.visual .text__group-1 .text-1 {padding: 15px 15px 15px 0;}
+section.visual .text__group-2 {display: flex;gap: 25px;border-left: 1px solid;padding: 15px;}
+section.visual .text__group-3 {font-family: impact;font-size: 64px;letter-spacing: 1px;}
+section.visual .text__group-3,
+section.visual .text__group-4 {padding: 15px 15px 15px 0;border-bottom: 1px solid;}
+section.visual .text__group-4 {font-size: 14px;line-height: 18px;}
+section.visual .animation-slide {flex: 1;aspect-ratio: 1;background: #00000009;}
