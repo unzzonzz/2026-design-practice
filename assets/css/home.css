@@ -3,10 +3,20 @@ section.visual .text-container {flex: 1;display: flex;flex-direction: column;}
 section.visual .text__group-1 {display: flex;border-top: 1px solid;border-bottom: 1px solid;}
 section.visual .text__group-1 .text-1 {padding: 15px 15px 15px 0;font-weight: bold;font-size: 24px;}
 section.visual .text__group-2 {display: flex;gap: 25px;border-left: 1px solid;padding: 15px;font-weight: bold;font-size: 24px;}
-section.visual .text__group-3 {font-family: impact;font-size: 64px;letter-spacing: 1px;}
+section.visual .text__group-3 {font-family: impact;font-size: 64px;letter-spacing: 1px;overflow: hidden;}
+section.visual .text__group-3 .text-3 {animation: text-3 .5s 1.25s forwards ease-out;opacity: 0;}
+@keyframes text-3 {
+  from {transform: translateY(100%);}
+  to {opacity: 1;}
+}
 section.visual .text__group-3,
 section.visual .text__group-4 {padding: 15px 15px 15px 0;border-bottom: 1px solid;}
-section.visual .text__group-4 {font-size: 14px;line-height: 18px;}
+section.visual .text__group-4 {font-size: 14px;line-height: 18px;overflow: hidden;}
+section.visual .text__group-4 .text-4 {animation: text-4 .5s 1.75s forwards ease-out;opacity: 0;}
+@keyframes text-4 {
+  from {transform: translateY(100%);}
+  to {opacity: 1;}
+}
 section.visual .indicators {display: flex;gap: 10px;}
 section.visual .indicator {width: 100px;height: 2.5px;background: #00000026;margin-top: 25px;}
 section.visual .indicator:first-child {background: #0253c7;}
@@ -14,34 +24,93 @@ section.visual .controls {display: flex;gap: 15px;margin-top: 15px;font-size: 24
 section.visual .controls .btn {cursor: pointer;}
 
 section.visual .animation-slide {position: relative;flex: 1;aspect-ratio: 1;}
-section.visual .animation-slide > * {position: absolute;}
+section.visual .animation-slide > * {position: absolute;animation-duration: .5s;animation-fill-mode: forwards;}
 
-section.visual .animation-slide .square-1 {top: 50px;left: 0;width: 250px;aspect-ratio: 1;background: #0253c7;}
-section.visual .animation-slide .square-2 {bottom: 65px;left: 0;width: 500px;height: 150px;background: #0253c7;}
-section.visual .animation-slide .square-3 {top: 125px;left: 100px;width: 400px;height: 25px;background: #000;}
-section.visual .animation-slide .square-4 {bottom: 215px;left: 250px;width: 250px;height: 85px;background: #000;}
+section.visual .animation-slide .square-1 {top: 50px;left: 0;width: 250px;aspect-ratio: 1;background: #0253c7;animation-name: square-1;animation-delay: .25s;opacity: 0;}
+@keyframes square-1 {
+  from {transform: translateX(-50%);}
+  to {opacity: 1;}
+}
+
+section.visual .animation-slide .square-2 {bottom: 65px;left: 0;width: 500px;height: 150px;background: #0253c7;animation-name: square-2;opacity: 0;animation-delay: .5s;}
+@keyframes square-2 {
+  from {transform: translateY(50%);}
+  to {opacity: 1;}
+}
+
+section.visual .animation-slide .square-3 {top: 125px;left: 100px;width: 400px;height: 25px;background: #000;animation-name: square-3;animation-delay: .5s;opacity: 0;}
+@keyframes square-3 {
+  from {transform: translateX(50%);}
+  to {opacity: 1;}
+}
+
+section.visual .animation-slide .square-4 {bottom: 215px;left: 250px;width: 250px;height: 85px;background: #000;animation-name: square-4;animation-delay: .5s;opacity: 0;}
+@keyframes square-4 {
+  from {transform: translateY(-50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .square-4::after {content: '';position: absolute;bottom: 25px;width: 100%;height: 1px;background: #fff;}
 
-section.visual .animation-slide .circle-1 {top: 0;right: 25px;width: 140px;aspect-ratio: 1;background: #ffc200;border-radius: 50%;}
-section.visual .animation-slide .circle-2 {bottom: 0;left: 0;width: 50px;aspect-ratio: 1;background: #0253c7;border-radius: 50%;}
+section.visual .animation-slide .circle-1 {top: 0;right: 25px;width: 140px;aspect-ratio: 1;background: #ffc200;border-radius: 50%;opacity: 0;animation-name: circle-1;animation-delay: 1s;}
+@keyframes circle-1 {
+  from {transform: translateY(50%);}
+  to {opacity: 1;}
+}
+section.visual .animation-slide .circle-2 {bottom: 0;left: 0;width: 50px;aspect-ratio: 1;background: #0253c7;border-radius: 50%;opacity: 0;animation-name: circle-2;animation-delay: .5s;}
+@keyframes circle-2 {
+  from {transform: translateX(-50%);}
+  to {opacity: 1;}
+}
 
-section.visual .animation-slide .dots-1 {left: 140px;top: 80px;display: grid;grid-template-columns: repeat(10, 5px);gap: 5px;}
+section.visual .animation-slide .dots-1 {left: 140px;top: 80px;display: grid;grid-template-columns: repeat(10, 5px);gap: 5px;opacity: 0;animation-name: dots-1;animation-delay: .75s;}
+@keyframes dots-1 {
+  from {transform: translateY(-50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .dots-1 .dot {width: 5px;height: 5px;background: #000;border-radius: 50%;}
 
-section.visual .animation-slide .dots-2 {left: 500px;bottom: 0;display: grid;grid-template-columns: repeat(4, 15px);gap: 15px;}
+section.visual .animation-slide .dots-2 {left: 500px;bottom: 0;display: grid;grid-template-columns: repeat(4, 15px);gap: 15px;opacity: 0;animation-name: dots-2;animation-delay: .75s;}
+@keyframes dots-2 {
+  from {transform: translateY(50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .dots-2 .dot {width: 15px;height: 15px;background: #000;border-radius: 50%;}
 
-section.visual .animation-slide .lines-1 {bottom: 125px;left: 50px;display: flex;gap: 7px;}
+section.visual .animation-slide .lines-1 {bottom: 125px;left: 50px;display: flex;gap: 7px;animation-name: lines-1;animation-delay: .75s;opacity: 0;z-index: 1;}
+@keyframes lines-1 {
+  from {transform: translateY(-50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .lines-1::before {content: '';position: absolute;bottom: 0;width: 100%;height: 100px;background: #fff;}
 section.visual .animation-slide .lines-1 .line {width: 7px;height: 325px;background: #000;z-index: 1;}
 
-section.visual .animation-slide .lines-2 {bottom: 65px;right: 25px;display: flex;flex-direction: column;gap: 3px;}
+section.visual .animation-slide .lines-2 {bottom: 65px;right: 25px;display: flex;flex-direction: column;gap: 3px;animation-name: lines-2;animation-delay: .5s;opacity: 0;}
+@keyframes lines-2 {
+  from {transform: translateX(50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .lines-2 .line {width: 360px;height: 5px;background: #000;}
 
-section.visual .animation-slide .lines-3 {bottom: 200px;right: 0;display: flex;flex-direction: column;gap: 5px;}
+section.visual .animation-slide .lines-3 {bottom: 200px;right: 0;display: flex;flex-direction: column;gap: 5px;animation-name: lines-3;opacity: 0;animation-delay: .25s;}
+@keyframes lines-3 {
+  from {transform: translateX(50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .lines-3 .line {width: 25px;height: 3px;background: #000;}
 
-section.visual .animation-slide .lines-4 {bottom: 300px;left: 502px;display: flex;gap: 2.5px;}
+section.visual .animation-slide .lines-4 {bottom: 300px;left: 502px;display: flex;gap: 2.5px;animation-name: lines-4;animation-delay: .75s;opacity: 0;}
+@keyframes lines-4 {
+  from {transform: translateX(-50%);}
+  to {opacity: 1;}
+}
 section.visual .animation-slide .lines-4 .line {width: 2px;height: 75px;background: #000;}
 
-section.visual .animation-slide img {top: 150px;left: 150px;width: 350px;height: 225px;object-fit: cover;}
+section.visual .animation-slide .img {top: 150px;left: 150px;width: 350px;height: 225px;object-fit: cover;animation-name: img;}
+@keyframes img {
+  from {transform: translateY(50%);opacity: 0;}
+  to {opacity: 1;}
+}
+section.visual .animation-slide .img img {width: 100%;height: 100%;filter: brightness(150%);}
+section.visual .animation-slide .img .number {position: absolute;bottom: 15px;left: 15px;font-size: 64px;font-family: impact;letter-spacing: 2px;color: #ffffff99;}
+
+section.visual .overlay {top: 190px;right: 200px;width: 60px;height: 160px;background: #0253c7;mix-blend-mode: multiply;}

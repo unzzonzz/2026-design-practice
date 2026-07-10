@@ -1,5 +1,10 @@
 * {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
 
+.section-title {display: flex;align-items: center;gap: 15px;font-size: 24px;}
+.section-title .title__line-1 {width: 300px;height: 1px;background: #000;}
+.section-title .title__line-2 {width: 200px;height: 1px;background: #000;}
+.section-title .title__line-3 {width: 100px;height: 1px;background: #000;}
+
 header {position: fixed;top: 0;display: flex;justify-content: center;height: 75px;background: #fff;width: 100%;}
 .header-inner {display: flex;justify-content: space-between;width: 1400px;padding: 10px 0;}
 .header__group-1 {display: flex;gap: 100px;}
@@ -10,7 +15,8 @@ header {position: fixed;top: 0;display: flex;justify-content: center;height: 75p
 .header__group-2 {display: flex;align-items: center;gap: 100px;}
 header .search {display: flex;height: 30px;}
 header .search input {width: 150px;border: 1px solid;outline: none;padding: 0 15px;}
-header .search button {background: #000;color: #fff;border: none;padding: 0 15px;}
+header .search button {background: #0253c7;color: #fff;border: none;padding: 0 15px;cursor: pointer;}
 
 main {display: flex;justify-content: center;margin-top: 75px;}
 .main-inner {width: 1400px;}
+
