@@ -21,3 +21,7 @@ header .search button {background: #0253c7;color: #fff;border: none;padding: 0 1
 main {display: flex;justify-content: center;margin-top: 75px;}
 .main-inner {width: 1400px;}
 
+footer {padding: 50px;background: #0253c7;}
+.footer-inner {position: relative;}
+footer .lines-1 {position: absolute;right: 0;bottom: 0;display: flex;gap: 5px;background: #fff;}
+footer .lines-1 .line {width: 5px;height: 125px;background: #000;}
