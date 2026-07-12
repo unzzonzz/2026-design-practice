@@ -6,6 +6,30 @@
 .section-title .title__line-2 {width: 200px;height: 1px;background: #000;}
 .section-title .title__line-3 {width: 100px;height: 1px;background: #000;}
 
+.bold {font-weight: bold;}
+
+#register:checked ~ .popup.register {opacity: 1;pointer-events: all;}
+#login:checked ~ .popup.login {opacity: 1;pointer-events: all;}
+.popup {position: fixed;inset: 0;display: flex;justify-content: center;align-items: center;background: #00000099;z-index: 200;opacity: 0;pointer-events: none;transition: .25s;}
+.popup-container {width: 350px;background: #fff;padding: 25px 40px;border-radius: 10px;box-shadow: 0 2px 5px #00000026;}
+.popup__top {position: relative;display: flex;justify-content: end;}
+.popup__top .close-btn {display: flex;justify-content: center;align-items: center;width: 35px;height: 35px;background: #ffc200;border-radius: 50%;font-weight: bold;font-size: 20px;cursor: pointer;}
+.popup__top .lines-1 {position: absolute;right: 25px;top: 25px;display: flex;flex-direction: column;gap: 3px;}
+.popup__top .lines-1 .line {width: 15px;height: 3px;background: #000;}
+.popup__group-1 {display: flex;flex-direction: column;gap: 10px;}
+.popup__title {display: flex;align-items: end;gap: 5px;color: #0253c7;line-height: 1;}
+.popup__title .text-1 {font-weight: bold;font-size: 24px;}
+.popup__description {font-size: 14px;color: #00000099;}
+.popup form {display: flex;flex-direction: column;gap: 25px;margin: 25px 0;}
+.popup .input__title {display: flex;align-items: end;line-height: 1;}
+.popup .input__title .text-1 {font-size: 14px;}
+.popup .input__title .text-2 {font-size: 10px;}
+.popup .input__group {}
+.popup input {width: 100%;border: none;border-bottom: 1px solid;outline: none;padding: 10px 0;}
+.popup button {padding: 10px;background: #0253c7;border: none;border-radius: 5px;color: #fff;cursor: pointer;}
+.popup .popup__more {display: flex;justify-content: center;gap: 5px;font-size: 14px;color: #00000099;}
+.popup .popup__more label {color: #0253c7;text-decoration-line: underline;cursor: pointer;}
+
 header {position: fixed;top: 0;display: flex;justify-content: center;height: 75px;background: #fff;width: 100%;z-index: 100;}
 .header-inner {display: flex;justify-content: space-between;width: 1400px;padding: 10px 0;}
 .header__group-1 {display: flex;gap: 100px;}
@@ -13,6 +37,7 @@ header {position: fixed;top: 0;display: flex;justify-content: center;height: 75p
 .header__main-nav {display: flex;align-items: center;gap: 50px;font-weight: bold;}
 .header__auth-nav {display: flex;align-items: center;gap: 25px;font-size: 14px;}
 .header__auth-nav .line {width: 1px;height: 14px;background: #000;}
+.header__auth-nav label {cursor: pointer;}
 .header__group-2 {display: flex;align-items: center;gap: 100px;}
 header .search {display: flex;height: 30px;}
 header .search input {width: 150px;border: 1px solid;outline: none;padding: 0 15px;}

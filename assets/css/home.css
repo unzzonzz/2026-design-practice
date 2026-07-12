@@ -1,4 +1,4 @@
-section.visual {display: flex;align-items: center;gap: 50px;height: calc(100vh - 150px);}
+section.visual {display: flex;align-items: center;gap: 50px;height: 700px;}
 section.visual .text-container {flex: 1;display: flex;flex-direction: column;}
 section.visual .text__group-1 {display: flex;border-top: 1px solid;border-bottom: 1px solid;overflow: hidden;}
 section.visual .text__group-1 .text-1 {padding: 15px 15px 15px 0;font-weight: bold;font-size: 24px;animation: text-1 .5s 1.75s forwards ease-out;opacity: 0;}
@@ -207,4 +207,15 @@ section.guide .calendar-body .day-container .schedule:last-child {background: #f
 section.editor {padding: 50px 0;}
 
 section.promotion {padding: 50px 0;}
-section.promotion .video-container video {width: 100%;}
+section.promotion .video-container {position: relative;}
+section.promotion .video-container video {width: 100%;border-radius: 25px;}
+section.promotion .promotion__group-1 {display: flex;gap: 25px;}
+section.promotion .text-container {position: relative;display: flex;flex-direction: column;justify-content: center;gap: 15px;white-space: nowrap;}
+section.promotion .text-container .text-1 {font-size: 20px;}
+section.promotion .text-container .text-2 {font-size: 14px;}
+section.promotion .video-container .lines-1 {position: absolute;bottom: 150px;right: -50px;display: flex;flex-direction: column;gap: 5px;}
+section.promotion .video-container .line {width: 25px;height: 3px;background: #000;}
+section.promotion .video-container .circle-1 {position: absolute;bottom: -25px;right: -50px;width: 150px;height: 150px;background: #ffc200;border-radius: 50%;}
+section.promotion .text-container .square-1 {position: absolute;top: 0;width: 100px;height: 125px;mix-blend-mode: hard-light;background: #0253c7;}
+section.promotion .text-container .dots-1 {position: absolute;top: 135px;display: grid;grid-template-columns: repeat(10, 4px);gap: 4px;}
+section.promotion .text-container .dot {width: 4px;height: 4px;background: #000;border-radius: 50%;}
