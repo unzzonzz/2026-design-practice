@@ -180,7 +180,7 @@ section.notice .item table td:first-child {border-right: 1px solid;}
 section.guide {padding: 50px 0;}
 section.guide .guide__group-1 {display: flex;gap: 50px;height: 600px;}
 section.guide .calendar-container {display: flex;width: 60%;height: 100%;border-radius: 10px;box-shadow: 0 0 10px #00000026;overflow: hidden;}
-section.guide .tab-content {width: 40%;height: 100%;border-radius: 10px;box-shadow: 0 0 10px #00000026;}
+section.guide .tab-content {min-width: 40%;height: 100%;border-radius: 10px;box-shadow: 0 0 10px #00000026;}
 section.guide .side-content {display: flex;flex-direction: column;align-items: center;width: 250px;height: 100%;background: #0253c7;color: #fff;padding: 15px 20px;}
 section.guide .side-content .side-content__top {width: 100%;font-size: 24px;margin-bottom: 40px;}
 section.guide .side-content .date-info {text-align: center;}
@@ -205,6 +205,8 @@ section.guide .calendar-body .day-container .schedule:first-child {background: #
 section.guide .calendar-body .day-container .schedule:last-child {background: #ffc200;}
 
 section.editor {padding: 50px 0;}
+section.editor .editor__group-1 {position: relative;}
+section.editor .text-container {}
 
 section.promotion {padding: 50px 0;}
 section.promotion .video-container {position: relative;}
@@ -219,3 +221,29 @@ section.promotion .video-container .circle-1 {position: absolute;bottom: -25px;r
 section.promotion .text-container .square-1 {position: absolute;top: 0;width: 100px;height: 125px;mix-blend-mode: hard-light;background: #0253c7;}
 section.promotion .text-container .dots-1 {position: absolute;top: 135px;display: grid;grid-template-columns: repeat(10, 4px);gap: 4px;}
 section.promotion .text-container .dot {width: 4px;height: 4px;background: #000;border-radius: 50%;}
+
+
+/* 탭 */
+.tabs-body > div {display: none;flex-direction: column;}
+
+#tab-all:checked ~ .tabs-body .tab-all-content {display: flex;}
+#tab-show:checked ~ .tabs-body .tab-show-content {display: flex;}
+#tab-fest:checked ~ .tabs-body .tab-fest-content {display: flex;}
+
+#tab-all:checked ~ .tab-nav .underline {transform: translateX(50px);}
+#tab-all:checked ~ .tab-nav [for="tab-all"] {color: black;}
+#tab-fest:checked ~ .tab-nav .underline {transform: translateX(235px);}
+#tab-fest:checked ~ .tab-nav [for="tab-fest"] {color: black;}
+#tab-show:checked ~ .tab-nav .underline {transform: translateX(420px);}
+#tab-show:checked ~ .tab-nav [for="tab-show"] {color: black;}
+
+.tab-nav {display: flex;width: 100%;height: 70px;position: relative;}
+.tab-nav label {cursor: pointer;width: calc(100% / 3);height: 100%;display: flex;justify-content: center;align-items: center;font-weight: 500;color: #949494;}
+.tab-nav .underline {width: 80px;height: 5px;background-color: #0253c7;position: absolute;top: 55px; transition: .3s cubic-bezier(0.19, 1, 0.22, 1);}
+
+.tabs-body {margin-top: 15px;}
+.tabs-body li {display: flex;align-items: center;justify-content: space-between;padding: 10px 20px;font-size: 15px;}
+.tabs-body .info {display: flex;align-items: center;gap: 10px;}
+.tabs-body .info .info-title {text-overflow: ellipsis;width: 280px;overflow: hidden;white-space: nowrap;}
+.tabs-body .info .type-tag {width: 70px;padding: 5px 7.5px;;color: #0253c7;font-weight: 500;white-space: nowrap;font-size: 13px;}
+.tabs-body .info-date {font-size: 12px;color: #949494;white-space: nowrap;}
