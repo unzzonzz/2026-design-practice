@@ -1,0 +1,26 @@
+* {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
+
+body {display: flex;flex-direction: column;align-items: center;}
+section {width: 1400px;}
+.visual__group-1 {display: flex;gap: 50px;}
+section.visual .text-container,
+section.visual .animation-container {position: relative;width: 50%;height: 700px;}
+section.visual .animation-container > * {position: absolute;}
+section.visual .animation-container .square-1 {width: 250px;height: 250px;background: #0253c7;}
+section.visual .animation-container .square-2 {bottom: 65px;width: 500px;height: 150px;background: #0253c7;}
+section.visual .animation-container .square-3 {width: 250px;height: 85px;bottom: 215px;left: 250px;background: #000;}
+section.visual .animation-container .square-3::before {content: "";position: absolute;bottom: 25px;width: 100%;height: 1px;background: #fff}
+section.visual .animation-container .square-4 {top: 125px;left: 100px;width: 400px;height: 25px;background: #000;}
+section.visual .animation-container .lines-1 {bottom: 125px;left: 50px;display: flex;gap: 7px;}
+section.visual .animation-container .lines-1 .line {width: 7px;height: 325px;background: #000;z-index: 1;}
+section.visual .animation-container .lines-1::before {content: "";position: absolute;bottom: 0;width: 100%;aspect-ratio: 1;background: #fff;}
+section.visual .animation-container .lines-2 {bottom: 65px;right: 25px;display: flex;flex-direction: column;gap: 3px;}
+section.visual .animation-container .lines-2 .line {width: 360px;height: 5px;background: #000;}
+section.visual .animation-container .lines-3 {bottom: 200px;right: 0;display: flex;flex-direction: column;gap: 5px;}
+section.visual .animation-container .lines-3 .line {width: 25px;height: 3px;background: #000;}
+section.visual .animation-container .lines-4 {bottom: 300px;left: 502px;display: flex;gap: 2px;}
+section.visual .animation-container .lines-4 .line {width: 2px;height: 75px;background: #000;}
+section.visual .animation-container .dots-1 {top: 80px;left: 140px;display: grid;grid-template-columns: repeat(10, 5px);gap: 5px;}
+section.visual .animation-container .dots-1 .dot {height: 5px;background: #000;border-radius: 50%;}
+section.visual .animation-container .dots-2 {bottom: 0;left: 500px;display: grid;grid-template-columns: repeat(4, 15px);gap: 15px;}
+section.visual .animation-container .dots-2 .dot {height: 15px;background: #000;border-radius: 50%;}
