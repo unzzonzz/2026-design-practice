@@ -1,0 +1,93 @@
+/* =========================================================================
+   투어 in 서울 — Claude Design 시안
+   컨셉 : 지오메트릭 스위스(Bauhaus) — 기존 컨셉/영역/팔레트 유지
+   재구성 포커스 : 컬러 운용 (블루·옐로우 액센트 배분 / mix-blend 오버레이 /
+                 섹션 간 대비 리듬 : white · paper · navy 밴드)
+   좌표 기준 : 1920 화면에서 section 1400px
+========================================================================= */
+
+:root {
+  --blue: #0253c7;        /* 시그널 블루 — 구조 */
+  --blue-700: #0140a0;    /* 딥 블루 — 엣지/프레스 */
+  --blue-900: #04204f;    /* 미드나잇 — 반전 밴드 그라운드 */
+  --yellow: #ffc200;      /* 핫 옐로우 — 구두점(punctuation) */
+  --ink: #0a0a0a;         /* 잉크 — 타이포/라인 */
+  --paper: #f4f1ea;       /* 웜 페이퍼 — 중립 밴드 */
+  --paper-2: #ebe4d5;     /* 딥 페이퍼 */
+  --white: #ffffff;
+  --muted: #0a0a0a99;
+}
+
+* {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
+html, body {overflow-x: hidden;}
+body {background: var(--white);color: var(--ink);font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, "Segoe UI", Roboto, sans-serif;-webkit-font-smoothing: antialiased;}
+
+/* ---------- 섹션 타이틀 : 컬러 코딩된 시그니처 룰러 ---------- */
+.section-title {display: flex;align-items: center;gap: 15px;font-size: 24px;margin-bottom: 40px;}
+.section-title::before {content: '';width: 14px;height: 14px;background: var(--yellow);flex: none;}
+.section-title .title__text-1 {font-weight: 800;letter-spacing: -0.5px;}
+.section-title .title__text-2 {color: var(--blue);font-weight: 700;font-style: italic;letter-spacing: 0.5px;}
+.section-title .title__group-1 {display: flex;align-items: center;gap: 14px;flex: 1;}
+.section-title .title__line-1 {flex: 1;height: 2px;background: var(--ink);}
+.section-title .title__line-2 {width: 160px;height: 2px;background: var(--blue);}
+.section-title .title__line-3 {width: 60px;height: 6px;background: var(--yellow);}
+
+.bold {font-weight: bold;}
+
+/* ---------- 팝업 ---------- */
+#register:checked ~ .popup.register {opacity: 1;pointer-events: all;}
+#login:checked ~ .popup.login {opacity: 1;pointer-events: all;}
+.popup {position: fixed;inset: 0;display: flex;justify-content: center;align-items: center;background: #04204fcc;z-index: 200;opacity: 0;pointer-events: none;transition: .25s;}
+.popup-container {position: relative;width: 360px;background: #fff;padding: 28px 40px;box-shadow: 14px 14px 0 var(--blue);border: 2px solid var(--ink);}
+.popup__top {position: relative;display: flex;justify-content: end;}
+.popup__top .close-btn {display: flex;justify-content: center;align-items: center;width: 35px;height: 35px;background: var(--yellow);border-radius: 50%;font-weight: bold;font-size: 20px;cursor: pointer;}
+.popup__top .lines-1 {position: absolute;right: 25px;top: 25px;display: flex;flex-direction: column;gap: 3px;}
+.popup__top .lines-1 .line {width: 15px;height: 3px;background: var(--ink);}
+.popup__group-1 {display: flex;flex-direction: column;gap: 10px;}
+.popup__title {display: flex;align-items: end;gap: 5px;color: var(--blue);line-height: 1;}
+.popup__title .text-1 {font-weight: 800;font-size: 26px;}
+.popup__description {font-size: 14px;color: var(--muted);}
+.popup form {display: flex;flex-direction: column;gap: 25px;margin: 25px 0;}
+.popup .input__title {display: flex;align-items: end;gap: 4px;line-height: 1;color: var(--blue);}
+.popup .input__title .text-1 {font-size: 14px;font-weight: 700;}
+.popup .input__title .text-2 {font-size: 10px;color: var(--muted);}
+.popup input {width: 100%;border: none;border-bottom: 2px solid var(--ink);outline: none;padding: 10px 0;transition: .2s;}
+.popup input:focus {border-color: var(--blue);}
+.popup button {padding: 12px;background: var(--blue);border: none;color: #fff;cursor: pointer;font-weight: 700;letter-spacing: 1px;transition: .2s;}
+.popup button:hover {background: var(--blue-900);}
+.popup .popup__more {display: flex;justify-content: center;gap: 5px;font-size: 14px;color: var(--muted);}
+.popup .popup__more label {color: var(--blue);text-decoration-line: underline;cursor: pointer;font-weight: 600;}
+
+/* ---------- 헤더 ---------- */
+header {position: fixed;top: 0;left: 0;display: flex;justify-content: center;height: 75px;background: var(--white);width: 100%;z-index: 100;border-bottom: 2px solid var(--ink);}
+.header-inner {display: flex;justify-content: space-between;align-items: center;width: 1400px;}
+.header__group-1 {display: flex;align-items: center;gap: 80px;}
+.logo {position: relative;width: 152px;height: 36px;background: var(--blue);}
+.logo::before {content: '투어 in 서울';position: absolute;inset: 0;display: flex;align-items: center;padding-left: 13px;color: #fff;font-weight: 800;font-size: 15px;letter-spacing: 0.3px;}
+.logo::after {content: '';position: absolute;top: -7px;right: -7px;width: 16px;height: 16px;background: var(--yellow);border-radius: 50%;}
+.header__main-nav {display: flex;align-items: center;gap: 45px;font-weight: 700;font-size: 15px;}
+.header__main-nav a {position: relative;padding: 4px 0;transition: .2s;}
+.header__main-nav a::after {content: '';position: absolute;left: 0;bottom: -3px;width: 0;height: 3px;background: var(--yellow);transition: .2s;}
+.header__main-nav a:hover {color: var(--blue);}
+.header__main-nav a:hover::after {width: 100%;}
+.header__auth-nav {display: flex;align-items: center;gap: 22px;font-size: 14px;font-weight: 600;}
+.header__auth-nav .line {width: 1px;height: 14px;background: var(--ink);}
+.header__auth-nav label {cursor: pointer;transition: .2s;}
+.header__auth-nav label:hover {color: var(--blue);}
+.header__group-2 {display: flex;align-items: center;gap: 60px;}
+header .search {display: flex;height: 34px;}
+header .search input {width: 170px;border: 2px solid var(--ink);border-right: none;outline: none;padding: 0 14px;font-size: 14px;}
+header .search input::placeholder {color: var(--muted);}
+header .search button {background: var(--blue);color: #fff;border: 2px solid var(--blue);padding: 0 16px;cursor: pointer;font-weight: 700;transition: .2s;}
+header .search button:hover {background: var(--blue-900);border-color: var(--blue-900);}
+
+/* ---------- main / footer ---------- */
+main {display: flex;justify-content: center;margin-top: 75px;}
+.main-inner {width: 1400px;}
+
+footer {position: relative;padding: 70px 0;background: var(--blue);overflow: hidden;}
+.footer-inner {position: relative;width: 1400px;margin: 0 auto;min-height: 130px;}
+.footer-inner::before {content: '투어 in 서울';position: absolute;left: 0;top: 10px;color: #fff;font-weight: 800;font-size: 40px;letter-spacing: -1px;}
+.footer-inner::after {content: 'My Own Seoul Trip · 2026';position: absolute;left: 2px;top: 66px;color: #ffffffaa;font-size: 14px;letter-spacing: 1px;}
+footer .lines-1 {position: absolute;right: 0;bottom: -70px;display: flex;gap: 5px;background: var(--yellow);padding: 0;}
+footer .lines-1 .line {width: 5px;height: 130px;background: var(--ink);}

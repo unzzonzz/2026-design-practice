@@ -13,7 +13,7 @@ section.visual .animation-container .square-3::before {content: "";position: abs
 section.visual .animation-container .square-4 {left: 100px;top: 125px;width: 400px;height: 25px;background: #000;animation: square-4 .5s .5s forwards;opacity: 0;}
 section.visual .animation-container .lines-1 {left: 50px;bottom: 125px;display: flex;gap: 7px;animation: lines-1 .5s .75s forwards, lines-1-loop 2.5s 2.25s ease-in-out infinite;opacity: 0;z-index: 1;}
 section.visual .animation-container .lines-1 .line {width: 7px;height: 325px;background: #000;z-index: 1;}
-section.visual .animation-container .lines-1::after {content: "";position: absolute;bottom: 0;width: 100%;aspect-ratio: 1;background: #fff;}
+section.visual .animation-container .lines-1::after {content: "";position: absolute;bottom: 0;width: 100%;height: 100px;background: #fff;}
 section.visual .animation-container .lines-2 {right: 25px;bottom: 65px;display: flex;flex-direction: column;gap: 3px;animation: lines-2 .5s .5s forwards, lines-2-loop 2.25s 2.25s ease-in-out infinite;opacity: 0;}
 section.visual .animation-container .lines-2 .line {width: 360px;height: 5px;background: #000;}
 section.visual .animation-container .lines-3 {right: 0;bottom: 200px;display: flex;flex-direction: column;gap: 5px;animation: lines-3 .5s .25s forwards, lines-3-loop 5s 2.25s ease-in-out infinite;opacity: 0;}
@@ -93,7 +93,8 @@ section.visual .animation-container .overlay-square {left: 415px;top: 190px;widt
 }
 @keyframes circle-1-loop {
   from, to {}
-  50% {transform: translateX(25%);}
+  25% {transform: translateX(0);}
+  50%, 75% {transform: translateX(50%);}
 }
 @keyframes circle-2 {
   from {transform: translateY(50%)}
