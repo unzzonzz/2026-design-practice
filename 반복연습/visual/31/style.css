@@ -1,0 +1,76 @@
+* {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
+
+body {display: flex;flex-direction: column;align-items: center;}
+section {width: 1400px;}
+.visual__group-1 {display: flex;gap: 50px;}
+section.visual .text-container,
+section.visual .animation-container {position: relative;flex: 1;aspect-ratio: 1;}
+section.visual .animation-container > * {position: absolute;}
+section.visual .animation-container .square-1 {top: 50px;width: 250px;height: 250px;background: #0253c7;}
+section.visual .animation-container .square-2 {bottom: 65px;width: 500px;height: 150px;background: #0253c7;}
+section.visual .animation-container .square-3 {left: 250px;bottom: 215px;width: 250px;height: 85px;background: #000;}
+section.visual .animation-container .square-3::before {content: '';position: absolute;bottom: 25px;width: 100%;height: 1px;background: #fff;}
+section.visual .animation-container .square-4 {left: 100px;top: 125px;width: 400px;height: 25px;background: #000;}
+section.visual .animation-container .lines-1 {left: 50px;bottom: 125px;display: flex;gap: 7px;z-index: 1;}
+section.visual .animation-container .lines-1 .line {width: 7px;height: 325px;background: #000;z-index: 1;}
+section.visual .animation-container .lines-1::before {content: '';position: absolute;bottom: 0;width: 100%;height: 100px;background: #fff;}
+section.visual .animation-container .lines-2 {right: 25px;bottom: 65px;display: flex;flex-direction: column;gap: 3px;}
+section.visual .animation-container .lines-2 .line {width: 360px;height: 5px;background: #000;}
+section.visual .animation-container .lines-3 {right: 0;bottom: 200px;display: flex;flex-direction: column;gap: 5px;}
+section.visual .animation-container .lines-3 .line {width: 25px;height: 3px;background: #0253c7;}
+section.visual .animation-container .lines-4 {left: 502px;bottom: 300px;display: flex;gap: 2px;}
+section.visual .animation-container .lines-4 .line {width: 2px;height: 75px;background: #000;}
+section.visual .animation-container .dots-1 {left: 140px;top: 80px;display: grid;grid-template-columns: repeat(10, 1fr);gap: 5px;}
+section.visual .animation-container .dots-1 .dot {width: 5px;height: 5px;background: #fff;border-radius: 50%;}
+section.visual .animation-container .dots-2 {left: 500px;bottom: 0;display: grid;grid-template-columns: repeat(4, 1fr);gap: 15px;}
+section.visual .animation-container .dots-2 .dot {width: 15px;height: 15px;background: #000;border-radius: 50%;}
+section.visual .animation-container .circle-1 {bottom: 0;width: 50px;height: 50px;background: #0253c7;border-radius: 50%;}
+section.visual .animation-container .circle-2 {right: 25px;width: 140px;height: 140px;background: #ffc200;border-radius: 50%;}
+section.visual .animation-container .img-container {left: 150px;top: 150px;width: 350px;height: 225px;}
+section.visual .animation-container .img-container img {position: absolute;inset: 0;width: 100%;height: 100%;object-fit: cover;opacity: 0;}
+section.visual .animation-container .overlay-square {left: 415px;top: 190px;width: 60px;height: 160px;background: #0253c7;mix-blend-mode: multiply;}
+section.visual .text-container {display: flex;flex-direction: column;justify-content: center;}
+section.visual .text-container .text__group-1 {display: flex;border-top: 1px solid #000;border-bottom: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text__group-2 {display: flex;border-left: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text__group-3 {padding: 15px;padding-left: 0;border-bottom: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text__group-4 {padding: 15px;padding-left: 0;border-bottom: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text-3-slider {position: relative;height: 79px;animation: text-top .5s 1.25s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-4-slider {position: relative;height: 40px;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-1 {padding: 15px;padding-left: 0;font-size: 24px;font-weight: bold;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-2:nth-child(1) {padding: 15px;font-size: 24px;font-weight: bold;animation: text-right .5s 1.75s ease-out forwards, text-active 10.5s infinite;opacity: 0;color: #00000050;}
+section.visual .text-container .text-2:nth-child(2) {padding: 15px;font-size: 24px;font-weight: bold;animation: text-right .5s 2s ease-out forwards, text-active 10.5s 3.5s infinite;opacity: 0;color: #00000050;}
+section.visual .text-container .text-2:nth-child(3) {padding: 15px;font-size: 24px;font-weight: bold;animation: text-right .5s 2.5s ease-out forwards, text-active 10.5s 7s infinite;opacity: 0;color: #00000050;}
+section.visual .text-container .text-3 {position: absolute;inset: 0;font-size: 64px;font-family: impact;letter-spacing: 1px;opacity: 0;}
+section.visual .text-container .text-4 {position: absolute;inset: 0;font-size: 14px;opacity: 0;}
+section.visual .text-container .indicators {display: flex;gap: 10px;margin-top: 25px;}
+section.visual .text-container .indicators .indicator {position: relative;width: 100px;height: 3px;background: #00000026;}
+section.visual .text-container .indicators .indicator::before {content: '';position: absolute;inset: 0;width: 0;height: 100%;background: #0253c7;animation: indicator-fill 10.5s linear infinite;}
+section.visual .text-container .indicators .indicator:nth-child(1)::before {animation-delay: 0;}
+section.visual .text-container .indicators .indicator:nth-child(2)::before {animation-delay: 3.5s;}
+section.visual .text-container .indicators .indicator:nth-child(3)::before {animation-delay: 7s;}
+section.visual .text-container .controller {display: flex;gap: 15px;margin-top: 15px;}
+section.visual .text-container .controller .button {font-size: 24px;cursor: pointer;}
+.slide {animation: slide-fade 10.5s ease-in-out infinite;}
+.slide:nth-child(1) {animation-delay: 0;}
+.slide:nth-child(2) {animation-delay: 3.5s;}
+.slide:nth-child(3) {animation-delay: 7s;}
+@keyframes text-top {
+  from {transform: translateY(50%);}
+  to {opacity: 1;}
+}
+@keyframes text-right {
+  from {transform: translateX(-50%);}
+  to {opacity: 1;}
+}
+@keyframes text-active {
+  from, 34% {color: #000;}
+  35%, to {color: #00000050;}
+}
+@keyframes indicator-fill {
+  34% {width: 100%;}
+  35% {width: 0;}
+}
+@keyframes slide-fade {
+  5%, 35% {opacity: 1;}
+  40% {opacity: 0;}
+}
