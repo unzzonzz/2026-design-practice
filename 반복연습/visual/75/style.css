@@ -1,13 +1,4 @@
-/* 초기화 */
 * {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
-
-/* 헤더 */
-
-/* 모달 */
-
-/* 메인 */
-
-/* 푸터 */
 
 body {display: flex;flex-direction: column;align-items: center;}
 section {width: 1400px;}
@@ -41,26 +32,26 @@ section.visual .animation-container .overlay-square {left: 415px;top: 190px;widt
 section.visual .text-container {display: flex;flex-direction: column;justify-content: center;}
 section.visual .text-container .text__group-1 {display: flex;border-bottom: 1px solid #000;border-top: 1px solid #000;overflow: hidden;}
 section.visual .text-container .text__group-2 {display: flex;border-left: 1px solid #000;overflow: hidden;}
-section.visual .text-container .text__group-3 {border-bottom: 1px solid #000;padding: 15px;padding-left: 0;overflow: hidden;}
-section.visual .text-container .text__group-4 {border-bottom: 1px solid #000;padding: 15px;padding-left: 0;overflow: hidden;}
-section.visual .text-container .text-3-slider {position: relative;height: 79px;animation: text-top .5s 1.25s ease-out forwards;opacity: 0;}
-section.visual .text-container .text-4-slider {position: relative;height: 40px;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
-section.visual .text-container .text-1 {padding: 15px;padding-left: 0;font-size: 24px;font-weight: bold;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
-section.visual .text-container .text-2 {padding: 15px;font-size: 24px;font-weight: bold;opacity: 0;color: #00000050;}
-section.visual .text-container .text-2:nth-child(1) {animation: text-top .5s 1.75s ease-out forwards, text-active 10.5s infinite;}
-section.visual .text-container .text-2:nth-child(2) {animation: text-top .5s 2s ease-out forwards, text-active 10.5s 3.5s infinite;}
-section.visual .text-container .text-2:nth-child(3) {animation: text-top .5s 2.25s ease-out forwards, text-active 10.5s 7s infinite;}
-section.visual .text-container .text-3 {font-size: 64px;font-family: impact;position: absolute;}
-section.visual .text-container .text-4 {font-size: 14px;position: absolute;}
+section.visual .text-container .text__group-3 {position: relative;padding: 15px;padding-left: 0;border-bottom: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text__group-4 {position: relative;padding: 15px;padding-left: 0;border-bottom: 1px solid #000;overflow: hidden;}
+section.visual .text-container .text-3-slider {height: 79px;animation: text-top .5s 1.25s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-4-slider {height: 40px;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-1 {font-size: 24px;font-weight: bold;padding: 15px;padding-left: 0;animation: text-top .5s 1.75s ease-out forwards;opacity: 0;}
+section.visual .text-container .text-2 {font-size: 24px;font-weight: bold;padding: 15px;color: #00000050;opacity: 0;}
+section.visual .text-container .text-2:nth-child(1) {animation: text-right .5s 1.75s ease-out forwards, text-active 10.5s infinite;}
+section.visual .text-container .text-2:nth-child(2) {animation: text-right .5s 2s ease-out forwards, text-active 10.5s 3.5s infinite;}
+section.visual .text-container .text-2:nth-child(3) {animation: text-right .5s 2.25s ease-out forwards, text-active 10.5s 7s infinite;}
+section.visual .text-container .text-3 {position: absolute;font-size: 64px;font-family: impact;}
+section.visual .text-container .text-4 {position: absolute;font-size: 14px;}
 section.visual .text-container .indicators {display: flex;gap: 10px;margin-top: 25px;}
 section.visual .text-container .indicator {position: relative;width: 100px;height: 3px;background: #00000026;}
-section.visual .text-container .indicator::before {content: '';position: absolute;inset: 0;width: 0;height: 100%;background: #0253c7;animation: indicator-fill 10.5s infinite;}
+section.visual .text-container .indicator::before {content: '';position: absolute;inset: 0;width: 0;height: 100%;background: #0253c7;animation: indicator-fill 10.5s linear infinite;}
 section.visual .text-container .indicator:nth-child(1)::before {animation-delay: 0;}
 section.visual .text-container .indicator:nth-child(2)::before {animation-delay: 3.5s;}
 section.visual .text-container .indicator:nth-child(3)::before {animation-delay: 7s;}
 section.visual .text-container .controller {display: flex;gap: 15px;margin-top: 15px;}
 section.visual .text-container .controller .button {font-size: 24px;cursor: pointer;}
-.slide {animation: slide-fade 10.5s ease-in-out infinite;opacity: 0;}
+.slide {animation: slide-fill 10.5s ease-in-out infinite;opacity: 0;}
 .slide:nth-child(1) {animation-delay: 0;}
 .slide:nth-child(2) {animation-delay: 3.5s;}
 .slide:nth-child(3) {animation-delay: 7s;}
@@ -76,13 +67,13 @@ section.visual .text-container .controller .button {font-size: 24px;cursor: poin
   from, 34% {color: #000;}
   35%, to {color: #00000050;}
 }
-@keyframes slide-fade {
-  5%, 35% {opacity: 1;}
-  40% {opacity: 0;}
-}
 @keyframes indicator-fill {
   34% {width: 100%;}
   35% {width: 0;}
+}
+@keyframes slide-fill {
+  5%, 35% {opacity: 1;}
+  40% {opacity: 0;}
 }
 @keyframes square-1 {
   from {transform: translateX(-50%);}
@@ -157,6 +148,6 @@ section.visual .text-container .controller .button {font-size: 24px;cursor: poin
   50%, 75% {transform: translateX(50%);}
 }
 @keyframes circle-2-loop {
-  from, to {transform: none;}
-  50% {transform: translateY(25%);}
+  from, to, 25% {transform: none;}
+  50%, 75% {transform: translateY(25%);}
 }
