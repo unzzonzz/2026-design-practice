@@ -50,14 +50,22 @@ header .search__group button {padding: 0 20px 0 15px;background: #0253c7;color: 
 main {display: flex;justify-content: center;margin-top: 75px;}
 .main__inner {width: 1400px;}
 
+html {scroll-behavior: smooth;}
+section {scroll-margin-top: 75px;}
 section:not(.visual) {padding: 75px 0;}
 
-footer {display: flex;justify-content: center;background: #0253c7;}
-.footer__inner {position: relative;display: flex;justify-content: space-between;align-items: center;width: 1400px;padding: 25px 0;}
+footer {display: flex;justify-content: center;background: #0253c7;color: #fff;}
+.footer__inner {position: relative;display: flex;flex-direction: column;width: 1400px;padding: 50px 0 25px;}
+footer .footer__group-1 {display: flex;justify-content: space-between;gap: 50px;padding-bottom: 25px;border-bottom: 1px solid #ffffff40;}
+footer .footer__about {display: flex;flex-direction: column;gap: 25px;}
 .footer__logo {display: flex;justify-content: center;align-items: center;width: 150px;height: 55px;filter: brightness(200%);}
-footer .footer__group-2 {display: flex;flex-direction: column;gap: 5px;color: #fff;text-align: center;font-size: 14px;}
-footer .footer__group-3 {display: flex;gap: 10px;font-size: 32px;color: #fff;}
-footer .footer__group-3 i {cursor: pointer;transition: .25s;}
-footer .footer__group-3 i:hover {transform: rotate(10deg);}
-footer .lines-1 {position: absolute;right: 0;bottom: 50%;display: flex;gap: 7px;background: #fff;transform: translateX(150%);}
-footer .lines-1 .line {width: 7px;height: 175px;background: #000;}
+footer .footer__info {display: flex;flex-direction: column;gap: 8px;font-size: 14px;color: #ffffffcc;}
+footer .footer__menu {display: flex;flex-direction: column;gap: 20px;}
+footer .footer__menu .menu__title {font-weight: bold;}
+footer .footer__menu .menu__links {display: grid;grid-template-columns: repeat(2, 1fr);gap: 10px 50px;font-size: 14px;color: #ffffffcc;}
+footer .footer__menu .menu__links a {transition: .25s;}
+footer .footer__menu .menu__links a:hover {color: #ffc200;}
+footer .footer__sns {display: flex;gap: 10px;}
+footer .footer__sns .sns-icon {display: flex;justify-content: center;align-items: center;width: 40px;height: 40px;border: 1px solid #fff;font-weight: bold;font-size: 14px;transition: .25s;}
+footer .footer__sns .sns-icon:hover {border-color: #ffc200;background: #ffc200;color: #0253c7;transform: translateY(-5px) rotate(8deg);}
+footer .footer__group-2 {display: flex;justify-content: center;padding-top: 25px;font-size: 14px;color: #ffffff99;}

@@ -51,10 +51,6 @@
         </div>
       </div>
       <div class="header__group-2">
-        <div class="search__group">
-          <input type="text" placeholder="검색">
-          <button>검색</button>
-        </div>
         <div class="header__auth-nav">
           <label for="login">로그인</label>
           <div class="separate-bar"></div>
@@ -225,10 +221,10 @@
           </div>
         </div>
       </section>
-      <section class="petsitter">
+      <section class="petsitter" id="petsitter">
         <div class="section-title">
           <div class="text-1">인기 펫시터</div>
-          <div class="text-1">popuplar petsitter</div>
+          <div class="text-1">popular petsitter</div>
           <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
@@ -237,7 +233,551 @@
         </div>
         <div class="petsitter-container">
           <div class="petsitter-item">
-            <img src="./assets/펫시터/images/petsitter1.png" alt="">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter1.png" alt="김민지 펫시터" title="김민지 펫시터">
+              <div class="item__status">예약 가능</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">김민지</div>
+                <div class="item__region">서울 강남구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.9</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 152</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 93%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">산책</div>
+                <div class="tag">소형견</div>
+                <div class="tag">노령견 케어</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“매일 사진 보내주셔서 안심됐어요!”</div>
+                <div class="review slide">“강아지가 정말 좋아했어요.”</div>
+                <div class="review slide">“친절하고 꼼꼼하게 돌봐주셨어요.”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">25,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+          <div class="petsitter-item unavailable">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter2.png" alt="이서연 펫시터" title="이서연 펫시터">
+              <div class="item__status">예약 불가</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">이서연</div>
+                <div class="item__region">부산 해운대구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.8</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 124</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 89%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">고양이</div>
+                <div class="tag">약 먹이기</div>
+                <div class="tag">실내놀이</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“고양이를 정말 잘 돌봐주세요.”</div>
+                <div class="review slide">“약 먹이는 것도 꼼꼼했어요.”</div>
+                <div class="review slide">“재예약하고 싶어요!”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">30,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+          <div class="petsitter-item">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter3.png" alt="박지훈 펫시터" title="박지훈 펫시터">
+              <div class="item__status">예약 가능</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">박지훈</div>
+                <div class="item__region">대구 수성구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.7</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 111</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 85%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">방문돌봄</div>
+                <div class="tag">대형견</div>
+                <div class="tag">산책</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“산책을 정말 열심히 해주세요.”</div>
+                <div class="review slide">“대형견도 잘 케어해주셨어요.”</div>
+                <div class="review slide">“시간 약속을 잘 지켜요.”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">22,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+          <div class="petsitter-item">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter4.png" alt="최유진 펫시터" title="최유진 펫시터">
+              <div class="item__status">예약 가능</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">최유진</div>
+                <div class="item__region">인천 연수구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.6</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 105</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 82%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">소동물</div>
+                <div class="tag">위탁돌봄</div>
+                <div class="tag">24시간 케어</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“토끼를 정말 잘 돌봐주셨어요.”</div>
+                <div class="review slide">“시설이 깨끗해서 좋았어요.”</div>
+                <div class="review slide">“친절하고 응답이 빨라요.”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">28,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+          <div class="petsitter-item">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter5.png" alt="정하늘 펫시터" title="정하늘 펫시터">
+              <div class="item__status">예약 가능</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">정하늘</div>
+                <div class="item__region">광주 북구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.9</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 188</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 95%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">병원동행</div>
+                <div class="tag">노령견 케어</div>
+                <div class="tag">특수케어</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“노령견을 안심하고 맡길 수 있었어요.”</div>
+                <div class="review slide">“병원 동행 서비스가 정말 좋았어요.”</div>
+                <div class="review slide">“설명도 자세하게 해주세요.”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">35,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+          <div class="petsitter-item unavailable">
+            <div class="item__img-cover">
+              <img src="./assets/펫시터/images/petsitter6.png" alt="한지우 펫시터" title="한지우 펫시터">
+              <div class="item__status">예약 불가</div>
+            </div>
+            <div class="item__body">
+              <div class="item__group-1">
+                <div class="item__name">한지우</div>
+                <div class="item__region">대전 유성구</div>
+              </div>
+              <div class="item__group-2">
+                <div class="item__rating"><span class="star">★</span>4.5</div>
+                <div class="separate-bar"></div>
+                <div class="item__reviews">리뷰 101</div>
+                <div class="separate-bar"></div>
+                <div class="item__rebook">재계약률 80%</div>
+              </div>
+              <div class="item__tags">
+                <div class="tag">고양이</div>
+                <div class="tag">방문돌봄</div>
+                <div class="tag">실내놀이</div>
+              </div>
+              <div class="item__review-slider">
+                <div class="review slide">“고양이가 스트레스 없이 잘 있었어요.”</div>
+                <div class="review slide">“정말 세심하게 돌봐주셨어요.”</div>
+                <div class="review slide">“다음에도 맡기고 싶어요.”</div>
+              </div>
+              <div class="item__group-3">
+                <div class="item__price">20,000원</div>
+              </div>
+            </div>
+            <div class="item__buttons">
+              <button class="like-btn">찜하기</button>
+              <button class="book-btn">예약하기</button>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="more-btn">더보기</a>
+      </section>
+      <section class="reservation" id="reservation">
+        <div class="section-title">
+          <div class="text-1">예약 프로세스</div>
+          <div class="text-1">reservation process</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="reservation__group-1">
+          <div class="process-track">
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="node"></div>
+            <div class="track-line"></div>
+            <div class="track-fill"></div>
+          </div>
+          <div class="process-container">
+            <div class="process-item">
+              <div class="item__number">01</div>
+              <div class="item__title">서비스 선택</div>
+              <div class="item__description">원하는 돌봄 서비스와 펫시터를 선택합니다.</div>
+            </div>
+            <div class="process-item">
+              <div class="item__number">02</div>
+              <div class="item__title">예약 신청</div>
+              <div class="item__description">예약 날짜와 요청 사항을 입력하여 예약을 진행합니다.</div>
+            </div>
+            <div class="process-item">
+              <div class="item__number">03</div>
+              <div class="item__title">예약 확인</div>
+              <div class="item__description">펫시터가 예약 요청을 확인하고 예약 가능 여부를 안내합니다.</div>
+            </div>
+            <div class="process-item">
+              <div class="item__number">04</div>
+              <div class="item__title">돌봄 진행</div>
+              <div class="item__description">예약된 날짜에 맞춰 반려동물 돌봄 서비스를 진행합니다.</div>
+            </div>
+            <div class="process-item">
+              <div class="item__number">05</div>
+              <div class="item__title">후기 작성</div>
+              <div class="item__description">서비스 이용 후 후기를 작성하고 평점을 남길 수 있습니다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="section-title">
+          <div class="text-1">이용 후기</div>
+          <div class="text-1">user review</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="review__group-1">
+          <input type="radio" name="review-page" id="review-1" hidden checked>
+          <input type="radio" name="review-page" id="review-2" hidden>
+          <div class="slider-controls">
+            <div class="page-indicator">
+              <div class="current page-1">01</div>
+              <div class="current page-2">02</div>
+              <div class="separate">/</div>
+              <div class="total">02</div>
+            </div>
+            <label class="control-btn prev" for="review-1">&lt;</label>
+            <label class="control-btn next" for="review-2">&gt;</label>
+          </div>
+          <div class="slider-viewport">
+            <div class="slider-track">
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review1.png" alt="김도윤 프로필" title="김도윤 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★★</div>
+                  <div class="item__content">처음 맡겨보는 거라 걱정했는데 사진도 자주 보내주시고 정말 친절하게 돌봐주셨어요!</div>
+                  <div class="item__meta">
+                    <div class="item__name">김도윤</div>
+                    <div class="item__pet">강아지</div>
+                    <div class="item__date">2026-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review2.png" alt="박서연 프로필" title="박서연 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★★</div>
+                  <div class="item__content">고양이가 예민한 편인데 편안하게 잘 지냈어요. 다음에도 예약하고 싶습니다.</div>
+                  <div class="item__meta">
+                    <div class="item__name">박서연</div>
+                    <div class="item__pet">고양이</div>
+                    <div class="item__date">2026-05-09</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review3.png" alt="이준혁 프로필" title="이준혁 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★☆</div>
+                  <div class="item__content">산책도 꼼꼼하게 해주시고 요청사항도 잘 반영해주셨어요.</div>
+                  <div class="item__meta">
+                    <div class="item__name">이준혁</div>
+                    <div class="item__pet">소형견</div>
+                    <div class="item__date">2026-05-05</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review4.png" alt="최하은 프로필" title="최하은 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★★</div>
+                  <div class="item__content">소동물 돌봄 가능한 곳이 적은데 정말 만족스러웠어요!</div>
+                  <div class="item__meta">
+                    <div class="item__name">최하은</div>
+                    <div class="item__pet">토끼</div>
+                    <div class="item__date">2026-05-01</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review5.png" alt="정유진 프로필" title="정유진 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★★</div>
+                  <div class="item__content">노령견이라 걱정이 많았는데 세심하게 케어해주셔서 안심됐습니다.</div>
+                  <div class="item__meta">
+                    <div class="item__name">정유진</div>
+                    <div class="item__pet">노령견</div>
+                    <div class="item__date">2026-04-28</div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-item">
+                <div class="item__tape"></div>
+                <div class="item__photo"><img src="./assets/후기/images/review6.png" alt="한지민 프로필" title="한지민 프로필"></div>
+                <div class="item__caption">
+                  <div class="item__rating">★★★★☆</div>
+                  <div class="item__content">예약 과정도 편하고 응답도 빨라서 좋았어요.</div>
+                  <div class="item__meta">
+                    <div class="item__name">한지민</div>
+                    <div class="item__pet">고양이</div>
+                    <div class="item__date">2026-04-25</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="section-title">
+          <div class="text-1">SNS 갤러리</div>
+          <div class="text-1">sns gallery</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="gallery__group-1">
+          <div class="category-menu">
+            <div class="category-btn active" data-category="all">전체</div>
+            <div class="category-btn" data-category="dog">강아지</div>
+            <div class="category-btn" data-category="cat">고양이</div>
+            <div class="category-btn" data-category="etc">기타</div>
+          </div>
+          <div class="gallery-container">
+            <label class="gallery-item size-2" for="gallery-1">
+              <img src="./assets/갤러리/images/cat01.jpg" alt="cat_day 게시물" title="cat_day 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 134</div>
+                <div class="item__tags">#고양이 #냥스타그램 #캣케어 #집사</div>
+              </div>
+            </label>
+            <label class="gallery-item size-7" for="gallery-2">
+              <img src="./assets/갤러리/images/hamster01.jpg" alt="tiny_pet 게시물" title="tiny_pet 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 87</div>
+                <div class="item__tags">#햄스터 #소동물 #귀여운동물 #일상</div>
+              </div>
+            </label>
+            <label class="gallery-item size-4" for="gallery-3">
+              <img src="./assets/갤러리/images/rabbit01.jpg" alt="bunny_house 게시물" title="bunny_house 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 98</div>
+                <div class="item__tags">#토끼 #소동물 #반려동물 #귀여워</div>
+              </div>
+            </label>
+            <label class="gallery-item size-6" for="gallery-4">
+              <img src="./assets/갤러리/images/puppy05.jpg" alt="dog_family 게시물" title="dog_family 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 173</div>
+                <div class="item__tags">#댕댕이 #노령견케어 #펫시터 #산책</div>
+              </div>
+            </label>
+            <label class="gallery-item size-5" for="gallery-5">
+              <img src="./assets/갤러리/images/cat02.jpg" alt="meow_meow 게시물" title="meow_meow 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 201</div>
+                <div class="item__tags">#고양이그램 #캣타워 #집사일상 #힐링</div>
+              </div>
+            </label>
+            <label class="gallery-item size-1" for="gallery-6">
+              <img src="./assets/갤러리/images/puppy01.jpg" alt="doglover_01 게시물" title="doglover_01 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 152</div>
+                <div class="item__tags">#강아지 #산책 #펫시터 #행복한하루</div>
+              </div>
+            </label>
+            <label class="gallery-item size-8" for="gallery-7">
+              <img src="./assets/갤러리/images/cat03.jpg" alt="lovely_cat 게시물" title="lovely_cat 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 145</div>
+                <div class="item__tags">#고양이일상 #냥냥 #캣스타그램 #반려묘</div>
+              </div>
+            </label>
+            <label class="gallery-item size-3" for="gallery-8">
+              <img src="./assets/갤러리/images/puppy03.jpg" alt="puppy_world 게시물" title="puppy_world 게시물">
+              <div class="item__overlay">
+                <div class="item__likes">♥ 189</div>
+                <div class="item__tags">#멍멍이 #방문돌봄 #산책시간 #펫케어</div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="section-title">
+          <div class="text-1">자주 묻는 질문</div>
+          <div class="text-1">faq</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="faq__group-1">
+          <input type="radio" name="faq" id="faq-1" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-1">
+              <div class="item__label">Q1</div>
+              <div class="item__text">예약은 어떻게 진행되나요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">원하는 펫시터를 선택한 후 예약 날짜와 요청 사항을 입력하면 예약이 진행됩니다.</div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" name="faq" id="faq-2" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-2">
+              <div class="item__label">Q2</div>
+              <div class="item__text">비회원도 예약이 가능한가요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">예약 및 돌봄 서비스 신청은 로그인 후 이용할 수 있습니다.</div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" name="faq" id="faq-3" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-3">
+              <div class="item__label">Q3</div>
+              <div class="item__text">예약 취소는 어떻게 하나요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">마이페이지에서 예약 내역 확인 후 취소 버튼을 눌러 취소할 수 있습니다.</div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" name="faq" id="faq-4" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-4">
+              <div class="item__label">Q4</div>
+              <div class="item__text">어떤 반려동물을 돌볼 수 있나요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">강아지, 고양이, 소동물 등 다양한 반려동물 돌봄 서비스를 제공합니다.</div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" name="faq" id="faq-5" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-5">
+              <div class="item__label">Q5</div>
+              <div class="item__text">펫시터 지원은 누구나 가능한가요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">회원가입 후 펫시터 지원 페이지에서 지원할 수 있습니다.</div>
+              </div>
+            </div>
+          </div>
+          <input type="radio" name="faq" id="faq-6" hidden>
+          <div class="faq-item">
+            <label class="item__question" for="faq-6">
+              <div class="item__label">Q6</div>
+              <div class="item__text">돌봄 서비스 신청 후 수정이 가능한가요?</div>
+              <div class="item__toggle">+</div>
+            </label>
+            <div class="item__answer">
+              <div class="item__answer-inner">
+                <div class="item__label">A</div>
+                <div class="item__text">신청 완료 후에는 관리자 확인 전까지 수정 및 취소가 가능합니다.</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -245,27 +785,36 @@
   </main>
   <footer>
     <div class="footer__inner">
-      <div class="footer__logo"><a href="index.html"><img src="./assets/images/logo.png" alt=""></a></div>
+      <div class="footer__group-1">
+        <div class="footer__about">
+          <div class="footer__logo"><a href="index.html"><img src="./assets/images/logo.png" alt="스킬스 펫케어 로고"></a></div>
+          <div class="footer__info">
+            <div class="text-1">대표자 : 홍길동</div>
+            <div class="text-1">사업자등록번호 : 123-45-67890</div>
+            <div class="text-1">주소 : 서울특별시 강남구 테헤란로 123 스킬스빌딩</div>
+            <div class="text-1">전화번호 : 02-1234-5678</div>
+            <div class="text-1">이메일 : skillspetcare@skills.com</div>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <div class="menu__title">서비스 바로가기</div>
+          <div class="menu__links">
+            <a href="#petsitter">인기 펫시터</a>
+            <a href="#reservation">예약하기</a>
+            <a href="#">돌봄 서비스</a>
+            <a href="#">마이페이지</a>
+            <a href="#">펫시터 지원</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+        <div class="footer__sns">
+          <a href="#" class="sns-icon" title="페이스북">f</a>
+          <a href="#" class="sns-icon" title="인스타그램">ig</a>
+          <a href="#" class="sns-icon" title="유튜브">yt</a>
+        </div>
+      </div>
       <div class="footer__group-2">
-        <div class="text-1">2026 Incheon Archive. All rights reserved.</div>
-        <div class="text-1">문의사항 | 1588-1234 (평일 09:00 ~ 18:00)</div>
-        <div class="text-1">관리자 전용 | 010-9876-5432 (긴급 시스템 장애 신고 전용)</div>
-      </div>
-      <div class="footer__group-3">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-youtube-square"></i>
-      </div>
-      <div class="lines-1">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <div class="copyright">Copyright © 2026 Skills PetCare. All Rights Reserved.</div>
       </div>
     </div>
   </footer>
@@ -273,7 +822,7 @@
   <div class="popup login">
     <div class="popup-container">
       <div class="popup__top">
-          <label for="none" class="close-btn">×</label>
+          <label for="login" class="close-btn">×</label>
           <div class="lines-1">
             <div class="line"></div>
             <div class="line"></div>
@@ -324,6 +873,126 @@
           <label for="register">회원가입 바로가기</label>
         </div>
       </div>
+  </div>
+  <input type="checkbox" id="gallery-1" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-1"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-1">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/cat01.jpg" alt="cat_day 게시물" title="cat_day 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@cat_day</div>
+        <div class="info__likes">♥ 134</div>
+      </div>
+      <div class="gallery-popup__tags">#고양이 #냥스타그램 #캣케어 #집사</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-2" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-2"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-2">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/hamster01.jpg" alt="tiny_pet 게시물" title="tiny_pet 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@tiny_pet</div>
+        <div class="info__likes">♥ 87</div>
+      </div>
+      <div class="gallery-popup__tags">#햄스터 #소동물 #귀여운동물 #일상</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-3" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-3"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-3">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/rabbit01.jpg" alt="bunny_house 게시물" title="bunny_house 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@bunny_house</div>
+        <div class="info__likes">♥ 98</div>
+      </div>
+      <div class="gallery-popup__tags">#토끼 #소동물 #반려동물 #귀여워</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-4" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-4"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-4">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/puppy05.jpg" alt="dog_family 게시물" title="dog_family 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@dog_family</div>
+        <div class="info__likes">♥ 173</div>
+      </div>
+      <div class="gallery-popup__tags">#댕댕이 #노령견케어 #펫시터 #산책</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-5" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-5"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-5">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/cat02.jpg" alt="meow_meow 게시물" title="meow_meow 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@meow_meow</div>
+        <div class="info__likes">♥ 201</div>
+      </div>
+      <div class="gallery-popup__tags">#고양이그램 #캣타워 #집사일상 #힐링</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-6" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-6"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-6">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/puppy01.jpg" alt="doglover_01 게시물" title="doglover_01 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@doglover_01</div>
+        <div class="info__likes">♥ 152</div>
+      </div>
+      <div class="gallery-popup__tags">#강아지 #산책 #펫시터 #행복한하루</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-7" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-7"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-7">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/cat03.jpg" alt="lovely_cat 게시물" title="lovely_cat 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@lovely_cat</div>
+        <div class="info__likes">♥ 145</div>
+      </div>
+      <div class="gallery-popup__tags">#고양이일상 #냥냥 #캣스타그램 #반려묘</div>
+    </div>
+  </div>
+  <input type="checkbox" id="gallery-8" hidden>
+  <div class="popup gallery-popup">
+    <label class="popup__bg" for="gallery-8"></label>
+    <div class="popup-container">
+      <div class="popup__top">
+        <label class="close-btn" for="gallery-8">×</label>
+      </div>
+      <div class="gallery-popup__img"><img src="./assets/갤러리/images/puppy03.jpg" alt="puppy_world 게시물" title="puppy_world 게시물"></div>
+      <div class="gallery-popup__info">
+        <div class="info__user">@puppy_world</div>
+        <div class="info__likes">♥ 189</div>
+      </div>
+      <div class="gallery-popup__tags">#멍멍이 #방문돌봄 #산책시간 #펫케어</div>
+    </div>
   </div>
 </body>
 </html>
