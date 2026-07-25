@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./sub.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header__inner">
+      <div class="header__group-1">
+        <div class="header__logo"><a href="index.html"><img src="./assets/images/logo.png" alt=""></a></div>
+        <div class="header__main-nav">
+          <div class="nav-cover">
+            <a href="#">문의사항</a>
+          </div>
+          <div class="nav-cover">
+            <a href="#">게시판</a>
+            <div class="drop-down">
+              <a href="./sub1.html">베스트 게시판</a>
+              <a href="#">전체 게시판</a>
+            </div>
+          </div>
+          <div class="nav-cover">
+            <a href="#">토론</a>
+            <div class="drop-down">
+              <a href="./sub2.html">베스트 토론</a>
+              <a href="#">전체 토론</a>
+            </div>
+          </div>
+          <div class="nav-cover">
+            <a href="#">마이페이지</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__group-2">
+        <div class="search__group">
+          <input type="text" placeholder="검색">
+          <button>검색</button>
+        </div>
+        <div class="header__auth-nav">
+          <label for="login">로그인</label>
+          <div class="separate-bar"></div>
+          <label for="register">회원가입</label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main__inner">
+      <section class="best">
+        <div class="section-title">
+          <div class="text-1">베스트 게시판</div>
+          <div class="text-2">best board</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <select name="" id="">
+            <option id="desc" value="">좋아요 내림차순</option>
+            <option id="asc" value="">좋아요 오름차순</option>
+          </select>
+        </div>
+
+        <div class="table__group-1">
+          <input type="radio" name="pagination" value="" id="p1" hidden checked>
+          <input type="radio" name="pagination" value="" id="p2" hidden>
+          <input type="radio" name="pagination" value="" id="p3" hidden>
+          <input type="radio" name="pagination" value="" id="p4" hidden>
+          <input type="radio" name="pagination" value="" id="p5" hidden>
+          <div class="circle-1"></div>
+          <div class="table">
+            <div class="tr">
+              <div class="th">번호</div>
+              <div class="th">제목</div>
+              <div class="th">날짜</div>
+              <div class="th">좋아요 수</div>
+            </div>
+            <div class="tbody">
+              <div class="tr__group-1">
+                <div class="tr">
+                  <div class="td">1   </div>
+                  <div class="td"><a href="./sub3.html">[속보] 인천대교 새해 첫 일출 실시간 현장 (드론 촬영)</a></div>
+                  <div class="td">2026-01-01   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 2451</div>
+                </div>
+                <div class="tr">
+                  <div class="td">2   </div>
+                  <div class="td"><a href="./sub3.html">오늘자 송도 센트럴파크 튤립 축제 개화 상태 (스냅샷 20장)</a></div>
+                  <div class="td">2026-05-02   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1892</div>
+                </div>
+                <div class="tr">
+                  <div class="td">3   </div>
+                  <div class="td"><a href="./sub3.html">인천러라면 무조건 공감하는 '인천 사람 특' 10가지</a></div>
+                  <div class="td">2026-03-15   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1720</div>
+                </div>
+                <div class="tr">
+                  <div class="td">4   </div>
+                  <div class="td"><a href="./sub3.html">송도 현대아울렛 근처 분위기 끝판왕 데이트 코스 추천</a></div>
+                  <div class="td">2026-02-14   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1533</div>
+                </div>
+                <div class="tr">
+                  <div class="td">5   </div>
+                  <div class="td"><a href="./sub3.html">[정리] 2026년 인천 지하철 연장 노선 확정안 총정리</a></div>
+                  <div class="td">2026-04-10   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1480</div>
+                </div>
+                <div class="tr">
+                  <div class="td">6   </div>
+                  <div class="td"><a href="./sub3.html">영종도 사시는 분들만 아는 숨겨진 노을 명소 공개합니다</a></div>
+                  <div class="td">2026-01-20   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1322</div>
+                </div>
+                <div class="tr">
+                  <div class="td">7   </div>
+                  <div class="td"><a href="./sub3.html">신포시장 닭강정 대기 없이 먹는 꿀팁 (현지인 피셜)</a></div>
+                  <div class="td">2026-03-22   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1290</div>
+                </div>
+                <div class="tr">
+                  <div class="td">8   </div>
+                  <div class="td"><a href="./sub3.html">인천 어린이날 가볼만한 곳 TOP 5 (부모님 필독)</a></div>
+                  <div class="td">2026-05-05   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1180</div>
+                </div>
+                <div class="tr">
+                  <div class="td">9   </div>
+                  <div class="td"><a href="./sub3.html">동인천 개항로 감성 카페 투어 후기 (ft. 인생샷 명소)</a></div>
+                  <div class="td">2026-04-18   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1105</div>
+                </div>
+                <div class="tr">
+                  <div class="td">10   </div>
+                  <div class="td"><a href="./sub3.html">청라 커낼웨이 야경 보면서 산책하기 좋은 코스</a></div>
+                  <div class="td">2026-02-28   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 1050</div>
+                </div>
+              </div>
+              <div class="tr__group-2">
+                <div class="tr">
+                  <div class="td">11   </div>
+                  <div class="td"><a href="./sub3.html">구월동 로데오거리 새로 생긴 대형 서점 방문기</a></div>
+                  <div class="td">2026-03-05   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 988</div>
+                </div>
+                <div class="tr">
+                  <div class="td">12   </div>
+                  <div class="td"><a href="./sub3.html">역대급 폭설 내린 오늘자 부평역 광장 풍경</a></div>
+                  <div class="td">2026-01-15   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 942</div>
+                </div>
+                <div class="tr">
+                  <div class="td">13   </div>
+                  <div class="td"><a href="./sub3.html">계양산 등산로 코스별 난이도 완벽 가이드</a></div>
+                  <div class="td">2026-04-25   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 877</div>
+                </div>
+                <div class="tr">
+                  <div class="td">14   </div>
+                  <div class="td"><a href="./sub3.html">월미도 바다열차 타고 한 바퀴 돌고 온 후기</a></div>
+                  <div class="td">2026-02-05   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 830</div>
+                </div>
+                <div class="tr">
+                  <div class="td">15   </div>
+                  <div class="td"><a href="./sub3.html">인천 지역 화폐 '인천e음' 혜택 변경사항 확인하세요</a></div>
+                  <div class="td">2026-03-12   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 795</div>
+                </div>
+                <div class="tr">
+                  <div class="td">16   </div>
+                  <div class="td"><a href="./sub3.html">소래포구 대하 축제 갈 때 바가지 안 쓰는 법</a></div>
+                  <div class="td">2026-05-01   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 760</div>
+                </div>
+                <div class="tr">
+                  <div class="td">17   </div>
+                  <div class="td"><a href="./sub3.html">주안역 근처 가성비 미친 고기집 발견했습니다</a></div>
+                  <div class="td">2026-01-10   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 722</div>
+                </div>
+                <div class="tr">
+                  <div class="td">18   </div>
+                  <div class="td"><a href="./sub3.html">인천 공항 스마트 패스 사용 후기 (출국 시간 단축)</a></div>
+                  <div class="td">2026-04-02   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 690</div>
+                </div>
+                <div class="tr">
+                  <div class="td">19   </div>
+                  <div class="td"><a href="./sub3.html">부평 지하상가에서 길 안 잃고 쇼핑하는 법</a></div>
+                  <div class="td">2026-02-18   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 655</div>
+                </div>
+                <div class="tr">
+                  <div class="td">20   </div>
+                  <div class="td"><a href="./sub3.html">송도 테크노파크 근처 직장인 점심 맛집 리스트</a></div>
+                  <div class="td">2026-03-28   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 610</div>
+                </div>
+              </div>
+              <div class="tr__group-3">
+                <div class="tr">
+                  <div class="td">21   </div>
+                  <div class="td"><a href="./sub3.html">강화도 루지 타러 갔다가 들린 오션뷰 빵집 추천</a></div>
+                  <div class="td">2026-01-25   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 588</div>
+                </div>
+                <div class="tr">
+                  <div class="td">22   </div>
+                  <div class="td"><a href="./sub3.html">연수구 벚꽃길 드라이브 코스 실시간 상황</a></div>
+                  <div class="td">2026-04-15   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 542</div>
+                </div>
+                <div class="tr">
+                  <div class="td">23   </div>
+                  <div class="td"><a href="./sub3.html">오늘 SSG 랜더스필드 직관 후기 (응원 열기 대박)</a></div>
+                  <div class="td">2026-05-04   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 520</div>
+                </div>
+                <div class="tr">
+                  <div class="td">24   </div>
+                  <div class="td"><a href="./sub3.html">인천시 청년 월세 지원 사업 신청 방법 공유</a></div>
+                  <div class="td">2026-02-10   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 495</div>
+                </div>
+                <div class="tr">
+                  <div class="td">25   </div>
+                  <div class="td"><a href="./sub3.html">검단신도시 입주 예정자분들 여기서 소통해요</a></div>
+                  <div class="td">2026-03-18   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 480</div>
+                </div>
+                <div class="tr">
+                  <div class="td">26   </div>
+                  <div class="td"><a href="./sub3.html">겨울철 문학산 설경 보러 가실 분? (아이젠 필수)</a></div>
+                  <div class="td">2026-01-08   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 455</div>
+                </div>
+                <div class="tr">
+                  <div class="td">27   </div>
+                  <div class="td"><a href="./sub3.html">인천 시티투어 버스 야간 노선 타봤는데 예쁘네요</a></div>
+                  <div class="td">2026-04-30   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 430</div>
+                </div>
+                <div class="tr">
+                  <div class="td">28   </div>
+                  <div class="td"><a href="./sub3.html">석남동 거북시장 맛집 아시는 분 계신가요?</a></div>
+                  <div class="td">2026-02-22   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 415</div>
+                </div>
+                <div class="tr">
+                  <div class="td">29   </div>
+                  <div class="td"><a href="./sub3.html">작전동 새로 오픈한 수영장 시설 대박입니다</a></div>
+                  <div class="td">2026-03-08   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 398</div>
+                </div>
+                <div class="tr">
+                  <div class="td">30   </div>
+                  <div class="td"><a href="./sub3.html">인천항 크루즈 터미널 구경 갔다 온 사진들</a></div>
+                  <div class="td">2026-01-30   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 370</div>
+                </div>
+              </div>
+              <div class="tr__group-4">
+                <div class="tr">
+                  <div class="td">31   </div>
+                  <div class="td"><a href="./sub3.html">소래산 야간 산책 가시는 분들 조심하세요</a></div>
+                  <div class="td">2026-04-22   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 355</div>
+                </div>
+                <div class="tr">
+                  <div class="td">32   </div>
+                  <div class="td"><a href="./sub3.html">부천과 인천 경계에 사는 사람들의 고충 모음</a></div>
+                  <div class="td">2026-05-03   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 342</div>
+                </div>
+                <div class="tr">
+                  <div class="td">33   </div>
+                  <div class="td"><a href="./sub3.html">간석동 근처 24시간 공부하기 좋은 카페 추천</a></div>
+                  <div class="td">2026-02-02   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 320</div>
+                </div>
+                <div class="tr">
+                  <div class="td">34   </div>
+                  <div class="td"><a href="./sub3.html">청라 호수공원 음악분수 시간표 공유합니다</a></div>
+                  <div class="td">2026-03-25   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 310</div>
+                </div>
+                <div class="tr">
+                  <div class="td">35   </div>
+                  <div class="td"><a href="./sub3.html">미추홀구 주민센터 문화 강좌 신청 성공기</a></div>
+                  <div class="td">2026-01-12   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 295</div>
+                </div>
+                <div class="tr">
+                  <div class="td">36   </div>
+                  <div class="td"><a href="./sub3.html">옥련동 할머니 떡볶이 아직도 줄 많이 서나요?</a></div>
+                  <div class="td">2026-04-08   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 280</div>
+                </div>
+                <div class="tr">
+                  <div class="td">37   </div>
+                  <div class="td"><a href="./sub3.html">남동공단 근처 가성비 한식 뷔페 추천받아요</a></div>
+                  <div class="td">2026-05-02   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 265</div>
+                </div>
+                <div class="tr">
+                  <div class="td">38   </div>
+                  <div class="td"><a href="./sub3.html">송도에서 공항 갈 때 6707B 버스가 제일 빨라요</a></div>
+                  <div class="td">2026-02-25   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 250</div>
+                </div>
+                <div class="tr">
+                  <div class="td">39   </div>
+                  <div class="td"><a href="./sub3.html">인천 꿈나무 카드 가맹점 리스트 업데이트 정보</a></div>
+                  <div class="td">2026-03-30   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 242</div>
+                </div>
+                <div class="tr">
+                  <div class="td">40   </div>
+                  <div class="td"><a href="./sub3.html">인천의 자부심! 인천 유나이티드 경기 일정 공유</a></div>
+                  <div class="td">2026-01-05   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 230</div>
+                </div>
+              </div>
+              <div class="tr__group-5">
+                <div class="tr">
+                  <div class="td">41   </div>
+                  <div class="td"><a href="./sub3.html">계양체육관 배구 경기 보러 오시는 분들 주차 팁</a></div>
+                  <div class="td">2026-04-12   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 215</div>
+                </div>
+                <div class="tr">
+                  <div class="td">42   </div>
+                  <div class="td"><a href="./sub3.html">부평구 보건소 임산부 혜택 정리해봤어요</a></div>
+                  <div class="td">2026-05-04   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 208</div>
+                </div>
+                <div class="tr">
+                  <div class="td">43   </div>
+                  <div class="td"><a href="./sub3.html">차이나타운 공화춘 짜장면 먹어본 솔직 후기</a></div>
+                  <div class="td">2026-02-15   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 195</div>
+                </div>
+                <div class="tr">
+                  <div class="td">44   </div>
+                  <div class="td"><a href="./sub3.html">화수부두 수산시장 횟감 시세 아시는 분?</a></div>
+                  <div class="td">2026-03-14   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 188</div>
+                </div>
+                <div class="tr">
+                  <div class="td">45   </div>
+                  <div class="td"><a href="./sub3.html">인천 도호부 관아 전통 놀이 체험 가족 여행 추천</a></div>
+                  <div class="td">2026-01-22   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 175</div>
+                </div>
+                <div class="tr">
+                  <div class="td">46   </div>
+                  <div class="td"><a href="./sub3.html">만석동 쭈꾸미 거리 제철이라 진짜 맛있네요</a></div>
+                  <div class="td">2026-04-19   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 160</div>
+                </div>
+                <div class="tr">
+                  <div class="td">47   </div>
+                  <div class="td"><a href="./sub3.html">송도 코스트코 주말 주차 지옥 피하는 시간대</a></div>
+                  <div class="td">2026-05-01   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 145</div>
+                </div>
+                <div class="tr">
+                  <div class="td">48   </div>
+                  <div class="td"><a href="./sub3.html">인천 서구 어린이 도서관 프로그램 알차네요</a></div>
+                  <div class="td">2026-02-08   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 132</div>
+                </div>
+                <div class="tr">
+                  <div class="td">49   </div>
+                  <div class="td"><a href="./sub3.html">논현동 양떼 목장 아이들이랑 가기 딱 좋아요</a></div>
+                  <div class="td">2026-03-01   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 120</div>
+                </div>
+                <div class="tr">
+                  <div class="td">50   </div>
+                  <div class="td"><a href="./sub3.html">인천 커뮤니티 첫 정기 정모 건의해봅니다!</a></div>
+                  <div class="td">2026-04-28   </div>
+                  <div class="td"><i class="fa fa-heart"></i> 115</div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="pagination">
+            <label for="p1"><div class="button">1</div></label>
+            <label for="p2"><div class="button">2</div></label>
+            <label for="p3"><div class="button">3</div></label>
+            <label for="p4"><div class="button">4</div></label>
+            <label for="p5"><div class="button">5</div></label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__logo"><a href="index.html"><img src="./assets/images/logo.png" alt=""></a></div>
+      <div class="footer__group-2">
+        <div class="text-1">2026 Incheon Archive. All rights reserved.</div>
+        <div class="text-1">문의사항 | 1588-1234 (평일 09:00 ~ 18:00)</div>
+        <div class="text-1">관리자 전용 | 010-9876-5432 (긴급 시스템 장애 신고 전용)</div>
+      </div>
+      <div class="footer__group-3">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-youtube-square"></i>
+      </div>
+      <div class="lines-1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

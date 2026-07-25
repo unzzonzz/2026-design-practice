@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./sub.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header__inner">
+      <div class="header__group-1">
+        <div class="header__logo"><a href="index.html"><img src="./assets/images/logo.png" alt=""></a></div>
+        <div class="header__main-nav">
+          <div class="nav-cover">
+            <a href="#">문의사항</a>
+          </div>
+          <div class="nav-cover">
+            <a href="#">게시판</a>
+            <div class="drop-down">
+              <a href="./sub1.html">베스트 게시판</a>
+              <a href="#">전체 게시판</a>
+            </div>
+          </div>
+          <div class="nav-cover">
+            <a href="#">토론</a>
+            <div class="drop-down">
+              <a href="./sub2.html">베스트 토론</a>
+              <a href="#">전체 토론</a>
+            </div>
+          </div>
+          <div class="nav-cover">
+            <a href="#">마이페이지</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__group-2">
+        <div class="search__group">
+          <input type="text" placeholder="검색">
+          <button>검색</button>
+        </div>
+        <div class="header__auth-nav">
+          <label for="login">로그인</label>
+          <div class="separate-bar"></div>
+          <label for="register">회원가입</label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main__inner">
+      <section class="best">
+        <div class="section-title">
+          <div class="text-1">베스트 토론</div>
+          <div class="text-2">best debate</div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <select name="" id="">
+            <option id="desc" value="">좋아요 내림차순</option>
+            <option id="asc" value="">좋아요 오름차순</option>
+          </select>
+        </div>
+        <div class="table__group-1">
+          <input type="radio" name="pagination" value="" id="p1" hidden checked>
+          <input type="radio" name="pagination" value="" id="p2" hidden>
+          <input type="radio" name="pagination" value="" id="p3" hidden>
+          <input type="radio" name="pagination" value="" id="p4" hidden>
+          <input type="radio" name="pagination" value="" id="p5" hidden>
+          <div class="circle-1"></div>
+          <div class="table">
+            <div class="tr">
+              <div class="th">번호</div>
+              <div class="th">제목</div>
+              <div class="th">날짜</div>
+            </div>
+            <div class="tbody">
+              <div class="tr__group-1">
+                <div class="tr">
+                  <div class="td">1    </div>
+                  <div class="td"><a href="./sub4.html">인천 원도심 재개발 vs 역사 보존, 여러분의 생각은?</a></div>
+                  <div class="td">2026-01-02</div>
+                </div>
+                <div class="tr">
+                  <div class="td">2    </div>
+                  <div class="td"><a href="./sub4.html">송도 트램 도입, 교통난 해소에 진짜 도움이 될까?</a></div>
+                  <div class="td">2026-01-05</div>
+                </div>
+                <div class="tr">
+                  <div class="td">3    </div>
+                  <div class="td"><a href="./sub4.html">인천 지하철 2호선 배차 간격, 이대로 괜찮은가요?</a></div>
+                  <div class="td">2026-01-10</div>
+                </div>
+                <div class="tr">
+                  <div class="td">4    </div>
+                  <div class="td"><a href="./sub4.html">청라 영상문화복합단지 조성, 지역 경제 파급효과는?</a></div>
+                  <div class="td">2026-01-15</div>
+                </div>
+                <div class="tr">
+                  <div class="td">5    </div>
+                  <div class="td"><a href="./sub4.html">부평 캠프마켓 공원화 방향: 문화 시설 vs 자연 녹지</a></div>
+                  <div class="td">2026-01-20</div>
+                </div>
+                <div class="tr">
+                  <div class="td">6    </div>
+                  <div class="td"><a href="./sub4.html">영종도 통행료 무료화 이후 체감되는 변화들</a></div>
+                  <div class="td">2026-01-25</div>
+                </div>
+                <div class="tr">
+                  <div class="td">7    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 화폐 'e음카드' 캐시백 요율 적정한가</a></div>
+                  <div class="td">2026-02-01</div>
+                </div>
+                <div class="tr">
+                  <div class="td">8    </div>
+                  <div class="td"><a href="./sub4.html">월미도 관광 활성화를 위해 가장 시급한 개선점</a> </div>
+                  <div class="td">2026-02-05</div>
+                </div>
+                <div class="tr">
+                  <div class="td">9    </div>
+                  <div class="td"><a href="./sub4.html">인천 유나이티드 전용 구장 주변 상권 활성화 방안</a></div>
+                  <div class="td">2026-02-10</div>
+                </div>
+                <div class="tr">
+                  <div class="td">10    </div>
+                  <div class="td"><a href="./sub4.html">바이오 클러스터 송도, 인천의 미래 먹거리 될까?</a> </div>
+                  <div class="td">2026-02-15</div>
+                </div>
+              </div>
+              <div class="tr__group-2">
+                <div class="tr">
+                  <div class="td">11    </div>
+                  <div class="td"><a href="./sub4.html">인천 내 중고등학교 남녀공학 전환에 대한 찬반 토론</a></div>
+                  <div class="td">2026-02-20</div>
+                </div>
+                <div class="tr">
+                  <div class="td">12    </div>
+                  <div class="td"><a href="./sub4.html">미추홀구 전세사기 피해 지원 대책, 실효성 있는가</a></div>
+                  <div class="td">2026-02-25</div>
+                </div>
+                <div class="tr">
+                  <div class="td">13    </div>
+                  <div class="td"><a href="./sub4.html">수도권 매립지 종료 문제, 인천시의 독자 노선 지지하시나요?</a></div>
+                  <div class="td">2026-03-01</div>
+                </div>
+                <div class="tr">
+                  <div class="td">14    </div>
+                  <div class="td"><a href="./sub4.html">인천국제공항 4단계 건설 사업과 일자리 창출 전망</a></div>
+                  <div class="td">2026-03-04</div>
+                </div>
+                <div class="tr">
+                  <div class="td">15    </div>
+                  <div class="td"><a href="./sub4.html">소래포구 바가지 요금 근절을 위한 실질적인 대책</a> </div>
+                  <div class="td">2026-03-07</div>
+                </div>
+                <div class="tr">
+                  <div class="td">16    </div>
+                  <div class="td"><a href="./sub4.html">인천항 중고차 수출 단지 이전 부지 어디가 적당할까</a></div>
+                  <div class="td">2026-03-10</div>
+                </div>
+                <div class="tr">
+                  <div class="td">17    </div>
+                  <div class="td"><a href="./sub4.html">강화도 관광 케이블카 설치, 환경 파괴 vs 지역 발전</a></div>
+                  <div class="td">2026-03-13</div>
+                </div>
+                <div class="tr">
+                  <div class="td">18    </div>
+                  <div class="td"><a href="./sub4.html">인천 시티투어 버스 노선 확대가 필요하다는 의견</a> </div>
+                  <div class="td">2026-03-16</div>
+                </div>
+                <div class="tr">
+                  <div class="td">19    </div>
+                  <div class="td"><a href="./sub4.html">우리 동네 쓰레기 분리배출 시스템 개선 제안</a> </div>
+                  <div class="td">2026-03-19</div>
+                </div>
+                <div class="tr">
+                  <div class="td">20    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 대학들의 경쟁력 강화 방안은 무엇일까</a> </div>
+                  <div class="td">2026-03-22</div>
+                </div>
+              </div>
+              <div class="tr__group-3">
+                <div class="tr">
+                  <div class="td">21    </div>
+                  <div class="td"><a href="./sub4.html">인천 내 공공의대 설립 추진, 시민들의 기대감</a></div>
+                  <div class="td">2026-03-25</div>
+                </div>
+                <div class="tr">
+                  <div class="td">22    </div>
+                  <div class="td"><a href="./sub4.html">아라뱃길 활성화 방안: 레저 스포츠 명소화 가능할까</a></div>
+                  <div class="td">2026-03-28</div>
+                </div>
+                <div class="tr">
+                  <div class="td">23    </div>
+                  <div class="td"><a href="./sub4.html">인천대교 통행료 추가 인하 가능성에 대한 토론</a> </div>
+                  <div class="td">2026-03-31</div>
+                </div>
+                <div class="tr">
+                  <div class="td">24    </div>
+                  <div class="td"><a href="./sub4.html">동인천역 북광장 개발 사업, 왜 지연되고 있을까</a></div>
+                  <div class="td">2026-04-02</div>
+                </div>
+                <div class="tr">
+                  <div class="td">25    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 청년 창업 지원금 제도 이용 후기 공유</a> </div>
+                  <div class="td">2026-04-05</div>
+                </div>
+                <div class="tr">
+                  <div class="td">26    </div>
+                  <div class="td"><a href="./sub4.html">연수구 상가 밀집 지역 주차난 해결책은 없는가</a> </div>
+                  <div class="td">2026-04-08</div>
+                </div>
+                <div class="tr">
+                  <div class="td">27    </div>
+                  <div class="td"><a href="./sub4.html">인천 야구의 성지 문학경기장 활용도 높이기 방안</a> </div>
+                  <div class="td">2026-04-11</div>
+                </div>
+                <div class="tr">
+                  <div class="td">28    </div>
+                  <div class="td"><a href="./sub4.html">제3연륙교 개통이 영종과 청라에 미칠 영향</a> </div>
+                  <div class="td">2026-04-14</div>
+                </div>
+                <div class="tr">
+                  <div class="td">29    </div>
+                  <div class="td"><a href="./sub4.html">인천항 크루즈 터미널 활성화 방안: 관광객 유치 전략</a> </div>
+                  <div class="td">2026-04-17</div>
+                </div>
+                <div class="tr">
+                  <div class="td">30    </div>
+                  <div class="td"><a href="./sub4.html">계양 신도시 교통 대책, GTX-D 노선 연결이 필수일까</a></div>
+                  <div class="td">2026-04-20</div>
+                </div>
+              </div>
+              <div class="tr__group-4">
+                <div class="tr">
+                  <div class="td">31    </div>
+                  <div class="td"><a href="./sub4.html">인천 내 반려동물 출입 가능 공원 확대 찬반</a></div>
+                  <div class="td">2026-04-22</div>
+                </div>
+                <div class="tr">
+                  <div class="td">32    </div>
+                  <div class="td"><a href="./sub4.html">개항장 문화재 야행 행사 규모 축소에 대한 우려</a></div>
+                  <div class="td">2026-04-24</div>
+                </div>
+                <div class="tr">
+                  <div class="td">33    </div>
+                  <div class="td"><a href="./sub4.html">인천시 자원순환센터 입지 선정 갈등 해결책은?</a> </div>
+                  <div class="td">2026-04-26</div>
+                </div>
+                <div class="tr">
+                  <div class="td">34    </div>
+                  <div class="td"><a href="./sub4.html">송도 워터프런트 사업 완료 후 수질 관리 대책</a></div>
+                  <div class="td">2026-04-28</div>
+                </div>
+                <div class="tr">
+                  <div class="td">35    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 도서관 야간 개방 확대에 대한 수요 조사</a> </div>
+                  <div class="td">2026-04-30</div>
+                </div>
+                <div class="tr">
+                  <div class="td">36    </div>
+                  <div class="td"><a href="./sub4.html">부평 지하상가 공실 문제 해결을 위한 임대료 정책</a></div>
+                  <div class="td">2026-05-02</div>
+                </div>
+                <div class="tr">
+                  <div class="td">37    </div>
+                  <div class="td"><a href="./sub4.html">인천 어린이 과학관 콘텐츠 보강 필요성에 대해</a> </div>
+                  <div class="td">2026-05-04</div>
+                </div>
+                <div class="tr">
+                  <div class="td">38    </div>
+                  <div class="td"><a href="./sub4.html">인천대 역세권 개발 사업과 상권 이동 전망</a> </div>
+                  <div class="td">2026-05-06</div>
+                </div>
+                <div class="tr">
+                  <div class="td">39    </div>
+                  <div class="td"><a href="./sub4.html">구월동 로데오거리 보행자 전용도로 확대 의견</a></div>
+                  <div class="td">2026-05-08</div>
+                </div>
+                <div class="tr">
+                  <div class="td">40    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 노인 복지 시설 확충 우선순위는?</a></div>
+                  <div class="td">2026-05-10</div>
+                </div>
+              </div>
+              <div class="tr__group-5">
+                <div class="tr">
+                  <div class="td">41    </div>
+                  <div class="td"><a href="./sub4.html">영종도 대형 복합 리조트 카지노 허가 이슈 토론</a></div>
+                  <div class="td">2026-05-12</div>
+                </div>
+                <div class="tr">
+                  <div class="td">42    </div>
+                  <div class="td"><a href="./sub4.html">인천 고등법원 유치 필요성에 공감하시나요?</a></div>
+                  <div class="td">2026-05-14</div>
+                </div>
+                <div class="tr">
+                  <div class="td">43    </div>
+                  <div class="td"><a href="./sub4.html">남동공단 구조 고도화 및 첨단 산업 유치 방안</a></div>
+                  <div class="td">2026-05-16</div>
+                </div>
+                <div class="tr">
+                  <div class="td">44    </div>
+                  <div class="td"><a href="./sub4.html">인천 문화예술회관 리모델링 방향 제안</a> </div>
+                  <div class="td">2026-05-18</div>
+                </div>
+                <div class="tr">
+                  <div class="td">45    </div>
+                  <div class="td"><a href="./sub4.html">만석·화수 해안산책로 연장 사업 기대 효과</a> </div>
+                  <div class="td">2026-05-20</div>
+                </div>
+                <div class="tr">
+                  <div class="td">46    </div>
+                  <div class="td"><a href="./sub4.html">인천 지역 소상공인 배달 앱 수수료 지원 정책</a></div>
+                  <div class="td">2026-05-22</div>
+                </div>
+                <div class="tr">
+                  <div class="td">47    </div>
+                  <div class="td"><a href="./sub4.html">인천 평화도로(영종-강화) 건설 추진 현황 점검</a> </div>
+                  <div class="td">2026-05-24</div>
+                </div>
+                <div class="tr">
+                  <div class="td">48    </div>
+                  <div class="td"><a href="./sub4.html">서구 루원시티 중심상업용지 개발 방향 토론</a></div>
+                  <div class="td">2026-05-26</div>
+                </div>
+                <div class="tr">
+                  <div class="td">49    </div>
+                  <div class="td"><a href="./sub4.html">인천형 저출산 대책 '1억 플러스 아이드림' 실효성</a></div>
+                  <div class="td">2026-05-28</div>
+                </div>
+                <div class="tr">
+                  <div class="td">50    </div>
+                  <div class="td"><a href="./sub4.html">인천 커뮤니티 활성화를 위한 기능 제안 및 자유 토론</a> </div>
+                  <div class="td">2026-05-30</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <label for="p1"><div class="button">1</div></label>
+            <label for="p2"><div class="button">2</div></label>
+            <label for="p3"><div class="button">3</div></label>
+            <label for="p4"><div class="button">4</div></label>
+            <label for="p5"><div class="button">5</div></label>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__logo"><a href="index.html"><img src="./assets/images/logo.png" alt=""></a></div>
+      <div class="footer__group-2">
+        <div class="text-1">2026 Incheon Archive. All rights reserved.</div>
+        <div class="text-1">문의사항 | 1588-1234 (평일 09:00 ~ 18:00)</div>
+        <div class="text-1">관리자 전용 | 010-9876-5432 (긴급 시스템 장애 신고 전용)</div>
+      </div>
+      <div class="footer__group-3">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-youtube-square"></i>
+      </div>
+      <div class="lines-1">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
