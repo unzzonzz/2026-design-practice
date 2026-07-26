@@ -18,9 +18,6 @@ header {position: fixed;inset: 0;width: 100%;height: 75px;display: flex;justify-
 .header__main-nav .nav-cover:hover > a::after {width: calc(100% + 20px);opacity: 1;}
 .header__auth-nav {display: flex;align-items: center;gap: 25px;font-size: 14px;}
 .header__auth-nav .separate-bar {width: 1px;height: 14px;background: #000;}
-header .search__group {display: flex;height: 30px;}
-header .search__group input {width: 150px;padding: 0 15px;border: 2px solid #0253c7;outline: none;border-radius: 50px 0 0 50px;}
-header .search__group button {padding: 0 20px 0 15px;background: #0253c7;color: #fff;border: none;cursor: pointer;border-radius: 0 50px 50px 0;}
 .header__main-nav .drop-down {position: absolute;top: 0;display: flex;flex-direction: column;align-items: center;gap: 10px;white-space: nowrap;font-size: 14px;transform: translateY(44px);padding: 10px 15px;opacity: 0;transition: .25s;pointer-events: none;background: #fff;border: 1px solid #000;border-top: none;}
 .header__main-nav .nav-cover:hover .drop-down {opacity: 1;pointer-events: all;}
 

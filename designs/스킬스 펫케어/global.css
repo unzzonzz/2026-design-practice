@@ -16,7 +16,7 @@
 .popup .input__title .text-1 {font-size: 14px;}
 .popup .input__title .text-2 {font-size: 10px;}
 .popup input {width: 100%;border: none;border-bottom: 1px solid;outline: none;padding: 10px 0;}
-.popup button {padding: 10px;background: #0253c7;border: none;border-radius: 5px;color: #fff;cursor: pointer;}
+.popup button {padding: 10px;background: #0253c7;border: none;border-radius: 5px;color: #fff;cursor: pointer;font-size: 14px;}
 .popup .popup__more {display: flex;justify-content: center;gap: 5px;font-size: 14px;color: #00000099;}
 .popup .popup__more label {color: #0253c7;text-decoration-line: underline;cursor: pointer;}
 .popup .popup__group-2 {display: flex;justify-content: center;gap: 15px;margin-bottom: 25px;}

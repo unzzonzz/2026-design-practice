@@ -174,21 +174,28 @@ section.notice {}
 .notice__group-1 table th,
 .notice__group-1 table td {padding: 10px 0;border-right: 1px solid;font-size: 14px;}
 .notice__group-1 table th {border-bottom: 1px solid;}
+.notice__group-1 table tbody tr {transition: .25s;}
+.notice__group-1 table tbody tr:hover {background: #0253c708;}
+.notice__group-1 table td a {display: block;transition: .25s;}
+.notice__group-1 table tbody tr:hover td a {color: #0253c7;}
 .notice__group-1 table th:last-child, 
 .notice__group-1 table td:last-child {border-right: none;}
-.notice__group-1 .circle-1 {position: absolute;right: 0;width: 100px;height: 100px;background: #ffc200;border-radius: 50%;}
+.notice__group-1 .circle-1 {position: absolute;right: 0;top: 0;width: 100px;height: 100px;background: #ffc200;border-radius: 50%;}
 .notice__group-1 .lines-1 {position: absolute;right: 0;bottom: 0;display: flex;gap: 5px;}
 .notice__group-1 .lines-1 .line {width: 3px;height: 25px;background: #000;}
 
 section.rule {}
 .rule__group-1 {position: relative;display: grid;grid-template-columns: repeat(4, 1fr);}
-section.rule .rule-item {display: flex;align-items: center;gap: 25px;padding: 15px 25px;padding-top: 0;border-right: 1px solid #000;border-bottom: 1px solid #000;}
+section.rule .rule-item {display: flex;align-items: center;gap: 25px;padding: 15px 25px;border-right: 1px solid #000;border-bottom: 1px solid #000;cursor: pointer;}
 section.rule .rule-item:nth-child(4n) {border-right: none}
-section.rule .rule-item:nth-child(n+5) {border-bottom: none;padding-bottom: 0;padding-top: 15px;}
+section.rule .rule-item:nth-child(n+5) {border-bottom: none;}
 section.rule .rule-item__group-1 {display: flex;flex-direction: column;gap: 5px;}
-section.rule .rule-item i {font-size: 24px;color: #00000050;}
-section.rule .rule-item .text-1 {font-weight: bold;}
-section.rule .rule-item .text-2 {font-size: 14px;color: #00000099;}
+section.rule .rule-item i {flex-shrink: 0;width: 30px;font-size: 24px;color: #00000050;text-align: center;transition: .25s;}
+section.rule .rule-item .text-1 {font-weight: bold;transition: .25s;}
+section.rule .rule-item .text-2 {font-size: 14px;color: #00000099;transition: .25s;}
+section.rule .rule-item:hover i {color: #0253c7;}
+section.rule .rule-item:hover .text-1 {color: #0253c7;}
+section.rule .rule-item:hover .text-2 {color: #000;}
 section.rule .circle-1 {position: absolute;width: 25px;height: 25px;background: #0253c7;border-radius: 50%;transform: translate(-50%, -50%);}
 section.rule .circle-2 {position: absolute;right: 0;bottom: 0;width: 50px;height: 50px;background: #ffc200;border-radius: 50%;transform: translate(50%, 50%);}
 section.rule .lines-1 {position: absolute;right: 0;bottom: 10px;display: flex;gap: 2px;transform: translateX(25px);}
@@ -204,9 +211,12 @@ section.inquiry .inquiry__slider {position: relative;display: flex;width: 100%;o
 section.inquiry .inquiry__group-2 {display: flex;animation: inquiry-roll 25s linear infinite;}
 section.inquiry .inquiry__slider.reverse {border-top: none;}
 section.inquiry .inquiry__slider.reverse .inquiry__group-2 {animation-direction: reverse;}
-section.inquiry .inquiry-item {display: flex;flex-direction: column;gap: 5px;padding: 25px;border-right: 1px solid #000;white-space: nowrap;}
-section.inquiry .inquiry-item .text-1 {font-weight: bold;}
-section.inquiry .inquiry-item .text-2 {font-size: 14px;color: #00000099;}
+section.inquiry .inquiry-item {display: flex;flex-direction: column;gap: 5px;padding: 25px;border-right: 1px solid #000;white-space: nowrap;cursor: pointer;transition: .25s;}
+section.inquiry .inquiry-item .text-1 {font-weight: bold;transition: .25s;}
+section.inquiry .inquiry-item .text-2 {font-size: 14px;color: #00000099;transition: .25s;}
+section.inquiry .inquiry__slider:hover .inquiry__group-2 {animation-play-state: paused;}
+section.inquiry .inquiry-item:hover .text-1 {color: #0253c7;}
+section.inquiry .inquiry-item:hover .text-2 {color: #000;}
 @keyframes inquiry-roll {
   from {transform: translateX(0);}
   to {transform: translateX(-100%);}
