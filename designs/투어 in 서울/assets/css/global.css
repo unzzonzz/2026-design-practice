@@ -47,7 +47,14 @@ header .search button {padding: 0 20px 0 15px;background: #0253c7;color: #fff;bo
 main {display: flex;justify-content: center;margin-top: 75px;}
 .main-inner {width: 1400px;}
 
-footer {padding: 50px;background: #0253c7;}
-.footer-inner {position: relative;}
+footer {display: flex;justify-content: center;padding: 50px 0;background: #0253c7;color: #fff;}
+.footer-inner {position: relative;display: flex;flex-direction: column;flex-shrink: 0;gap: 25px;width: 1400px;}
+footer .footer__group-1 {display: flex;justify-content: space-between;gap: 50px;padding-bottom: 25px;border-bottom: 1px solid #ffffff40;}
+footer .logo {width: 150px;height: 55px;background: #ffffff26;}
+footer .footer__group-2 {display: flex;flex-direction: column;gap: 8px;font-size: 14px;color: #ffffffcc;}
+footer .footer__group-3 {display: flex;gap: 10px;}
+footer .footer__group-3 .sns-icon {display: flex;justify-content: center;align-items: center;width: 40px;height: 40px;border: 1px solid #fff;font-size: 14px;transition: .25s;}
+footer .footer__group-3 .sns-icon:hover {border-color: #ffc200;background: #ffc200;color: #0253c7;}
+footer .copyright {font-size: 14px;color: #ffffff99;}
 footer .lines-1 {position: absolute;right: 0;bottom: 0;display: flex;gap: 5px;background: #fff;}
 footer .lines-1 .line {width: 5px;height: 125px;background: #000;}
