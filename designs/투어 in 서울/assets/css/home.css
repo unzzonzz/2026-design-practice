@@ -155,7 +155,7 @@ section.notice .notice__container {padding: 0 50px;}
 section.notice .item__title {display: flex;align-items: center;gap: 5px;height: fit-content;line-height: 18px;font-size: 18px;font-weight: bold;}
 section.notice .item__title::before {content: '';display: block;width: 7.5px;height: 36px;background: #ffc200;}
 section.notice .notice__container {display: grid;grid-template-columns: 1fr 1fr;gap: 50px;}
-section.notice .item {display: flex;gap: 25px;height: 440px;}
+section.notice .item {display: flex;gap: 25px;width: 435px;height: 440px;}
 section.notice .item-info {position: relative;flex: 1;}
 section.notice .item-info > * {position: absolute;}
 section.notice .item .square-1 {left: 0;top: 5px;width: 120px;height: 120px;background: #0253c7;}
