@@ -1,4 +1,5 @@
 * {margin: 0;padding: 0;list-style: none;text-decoration: none;box-sizing: border-box;color: inherit;}
+html, body {overflow-x: hidden;}
 
 .section-title {display: flex;align-items: center;gap: 15px;font-size: 24px;margin-bottom: 25px;}
 .section-title .title__group-1 {display: flex;gap: 50px;}
@@ -23,10 +24,10 @@
 .popup form {display: flex;flex-direction: column;gap: 25px;margin: 25px 0;}
 .popup .input__title {display: flex;align-items: end;line-height: 1;}
 .popup .input__title .text-1 {font-size: 14px;}
-.popup .input__title .text-2 {font-size: 10px;}
+.popup .input__title .text-2 {font-size: 12px;}
 .popup .input__group {}
 .popup input {width: 100%;border: none;border-bottom: 1px solid;outline: none;padding: 10px 0;}
-.popup button {padding: 10px;background: #0253c7;border: none;border-radius: 5px;color: #fff;cursor: pointer;}
+.popup button {padding: 10px;background: #0253c7;border: none;border-radius: 50px;color: #fff;font-size: 14px;cursor: pointer;}
 .popup .popup__more {display: flex;justify-content: center;gap: 5px;font-size: 14px;color: #00000099;}
 .popup .popup__more label {color: #0253c7;text-decoration-line: underline;cursor: pointer;}
 
@@ -40,8 +41,8 @@ header {position: fixed;top: 0;display: flex;justify-content: center;height: 75p
 .header__auth-nav label {cursor: pointer;}
 .header__group-2 {display: flex;align-items: center;gap: 100px;}
 header .search {display: flex;height: 30px;}
-header .search input {width: 150px;border: 1px solid;outline: none;padding: 0 15px;}
-header .search button {background: #0253c7;color: #fff;border: none;padding: 0 15px;cursor: pointer;}
+header .search input {width: 150px;padding: 0 15px;border: 1px solid #0253c7;border-radius: 50px 0 0 50px;outline: none;font-size: 14px;}
+header .search button {padding: 0 20px 0 15px;background: #0253c7;color: #fff;border: none;border-radius: 0 50px 50px 0;font-size: 14px;cursor: pointer;}
 
 main {display: flex;justify-content: center;margin-top: 75px;}
 .main-inner {width: 1400px;}
