@@ -289,8 +289,8 @@ section.promotion label {display: none;}
 .tab-nav label {cursor: pointer;width: calc(100% / 3);height: 100%;display: flex;justify-content: center;align-items: center;font-size: 14px;color: #00000066;transition: .25s;}
 .tab-nav .underline {position: absolute;left: 0;bottom: -1px;width: calc(100% / 3);height: 3px;background: #0253c7;transition: .3s cubic-bezier(0.19, 1, 0.22, 1);}
 
-.tabs-body {margin-top: 0;}
-.tabs-body li {display: flex;align-items: center;justify-content: space-between;padding: 12px 20px;font-size: 14px;border-bottom: 1px solid #00000026;transition: .25s;}
+.tabs-body {margin-top: 0;padding: 0 20px;}
+.tabs-body li {display: flex;align-items: center;justify-content: space-between;padding: 12px 0;font-size: 14px;border-bottom: 1px solid #000;transition: .25s;}
 .tabs-body li:hover .info-title {color: #0253c7;}
 .tabs-body .info {display: flex;align-items: center;gap: 10px;}
 .tabs-body .info .info-title {text-overflow: ellipsis;width: 280px;overflow: hidden;white-space: nowrap;transition: .25s;}
