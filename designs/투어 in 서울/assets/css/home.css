@@ -172,12 +172,12 @@ section.notice .item .item-info__group-1 .more-btn:hover {background: transparen
 section.notice .item .item-info__group-1 .more-btn::after {content: ' →';}
 section.notice .more-btn {padding: 10px 30px;background: #fff;width: fit-content;border: 1px solid #000;border-radius: 50px;font-size: 14px;white-space: nowrap;cursor: pointer;transition: .25s;}
 section.notice .more-btn:hover {border-color: #0253c7;background: #0253c7;color: #fff;}
-section.notice .item table {height: 200px;border-collapse: collapse;margin: auto 0;}
-section.notice .item table th,
-section.notice .item table td {padding: 10px 20px;text-align: center;font-size: 14px;}
-section.notice .item table th {border-bottom: 1px solid;}
-section.notice .item table th:first-child,
-section.notice .item table td:first-child {border-right: 1px solid;}
+section.notice .news-container {display: flex;flex-direction: column;justify-content: center;flex: 1;gap: 25px;}
+section.notice .item table {width: 100%;table-layout: fixed;border-collapse: collapse;}
+section.notice .item table td {padding: 12px 0;border-bottom: 1px solid #00000026;text-align: left;font-size: 14px;transition: .25s;}
+section.notice .item table td:first-child {width: 40px;font-size: 12px;color: #0253c7;}
+section.notice .item table td:last-child {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+section.notice .item table tr:hover td:last-child {color: #0253c7;}
 
 section.guide {padding: 50px 0;}
 section.guide .guide__group-1 {display: flex;gap: 50px;height: 600px;}
