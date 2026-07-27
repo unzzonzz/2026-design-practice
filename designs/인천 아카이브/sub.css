@@ -25,16 +25,16 @@ select {padding: 5px 15px;margin-left: auto;}
 .best:has(#asc:checked) #p5:checked ~ .table .tbody > .tr__group-1 {display: flex;}
 .best:has(#asc:checked) .tbody > div {flex-direction: column-reverse;}
 .table .tbody > div .tr {animation: row-in .35s backwards;}
-.table .tbody > div .tr:nth-child(1) {animation-delay: .03s;}
-.table .tbody > div .tr:nth-child(2) {animation-delay: .06s;}
-.table .tbody > div .tr:nth-child(3) {animation-delay: .09s;}
-.table .tbody > div .tr:nth-child(4) {animation-delay: .12s;}
-.table .tbody > div .tr:nth-child(5) {animation-delay: .15s;}
-.table .tbody > div .tr:nth-child(6) {animation-delay: .18s;}
-.table .tbody > div .tr:nth-child(7) {animation-delay: .21s;}
-.table .tbody > div .tr:nth-child(8) {animation-delay: .24s;}
-.table .tbody > div .tr:nth-child(9) {animation-delay: .27s;}
-.table .tbody > div .tr:nth-child(10) {animation-delay: .3s;}
+.table .tbody > div .tr:nth-child(1) {animation-delay: calc(.03s * 1);}
+.table .tbody > div .tr:nth-child(2) {animation-delay: calc(.03s * 2);}
+.table .tbody > div .tr:nth-child(3) {animation-delay: calc(.03s * 3);}
+.table .tbody > div .tr:nth-child(4) {animation-delay: calc(.03s * 4);}
+.table .tbody > div .tr:nth-child(5) {animation-delay: calc(.03s * 5);}
+.table .tbody > div .tr:nth-child(6) {animation-delay: calc(.03s * 6);}
+.table .tbody > div .tr:nth-child(7) {animation-delay: calc(.03s * 7);}
+.table .tbody > div .tr:nth-child(8) {animation-delay: calc(.03s * 8);}
+.table .tbody > div .tr:nth-child(9) {animation-delay: calc(.03s * 9);}
+.table .tbody > div .tr:nth-child(10) {animation-delay: calc(.03s * 10);}
 .table .tbody .tr {transition: .25s;}
 .table .tbody .tr:hover {background: #0253c708;}
 .table .tbody .tr:hover .td a {color: #0253c7;font-weight: bold;}
